@@ -1,4 +1,56 @@
-body {
-  background: #000;
-  color: #fff;
+.video-main {
+  background-color: #d4e7ea;
+}
+.video-main .nav-container {
+  height: 60px;
+  color: #0c3b3d;
+}
+.video-main .nav-container .nav-hamburger {
+  float: left;
+}
+.video-main .nav-container .nav-search {
+  float: right;
+}
+.video-main .video-container {
+  padding-bottom: 30px;
+}
+.video-item {
+  background-color: #ffffff;
+}
+.video-item .left-container,
+.video-item .video-container,
+.video-item .right-container {
+  display: inline-block;
+}
+.video-item .left-container {
+  float: left;
+}
+.video-item .left-container .video-timestamp {
+  color: #0c3b3d;
+}
+.video-item .left-container .video-share {
+  color: #ffffff;
+  background-color: #5fa09f;
+  border-radius: 50%;
+}
+.video-item .right-container {
+  float: right;
+}
+.video-item .right-container .video-title {
+  color: #0c3b3d;
+}
+.video-item .right-container .video-title .title-text {
+  font-size: 14px;
+}
+.video-item .right-container .video-duration {
+  color: #ffffff;
+}
+.video-item .right-container .video-duration .badge {
+  background-color: #5fa09f;
+}
+.video-item .right-container .video-description {
+  color: #000000;
+}
+.video-item .right-container .video-description .meta {
+  font-size: 12px;
 }
