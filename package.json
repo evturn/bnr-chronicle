@@ -14,5 +14,8 @@
     "gulp-notify": "^2.2.0",
     "gulp-util": "^3.0.5",
     "gulp-watch": "^4.2.4"
+  },
+  "dependencies": {
+    "less": "^2.5.1"
   }
 }
