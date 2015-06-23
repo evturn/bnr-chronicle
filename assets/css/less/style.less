@@ -11,6 +11,10 @@ body {
   font-family: @primarysans;
 }
 
+.container {
+  width: 100%;
+}
+
 .header-text {
   font-size: 20px;
   font-weight: 700;
@@ -51,7 +55,8 @@ body {
 
 .video-item {
   background-color: @white;
-
+  padding-bottom: 50px;
+  border-bottom: 1px solid @grey;
   .left-container,
   .video-container,
   .right-container {
@@ -68,7 +73,7 @@ body {
       display: inline-block;
 
       p {
-        margin: 0;
+        margin: -10px 0 0 0;
       }
     }
 
@@ -76,7 +81,9 @@ body {
       color: @white;
       background-color: @primarylight;
       border-radius: 50%;
-      padding: 30%;
+      padding: 25%;
+      width: 30px;
+      height: 30px;
     }
   }
 
@@ -114,6 +121,7 @@ body {
     }
     .item-link {
       text-align: right;
+
       .link {
         color: @primarylight;
         font-size: 18px;
