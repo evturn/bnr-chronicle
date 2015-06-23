@@ -52,10 +52,11 @@ body {
 .video-item .left-container .video-timestamp p {
   margin: 0;
 }
-.video-item .left-container .video-share {
+.video-item .left-container .video-share .fa {
   color: #ffffff;
   background-color: #5fa09f;
   border-radius: 50%;
+  padding: 30%;
 }
 .video-item .video-container {
   z-index: 1;
