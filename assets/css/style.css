@@ -48,7 +48,8 @@ body {
 .video-item .left-container {
   float: left;
   text-align: right;
-  padding: 20px;
+  padding-right: 0;
+  padding-top: 30px;
 }
 .video-item .left-container .video-timestamp {
   text-align: center;
@@ -57,13 +58,17 @@ body {
 .video-item .left-container .video-timestamp p {
   margin: -10px 0 0 0;
 }
-.video-item .left-container .video-share .fa {
-  color: #ffffff;
+.video-item .left-container .video-share {
+  width: 35px;
+  height: 35px;
   background-color: #5fa09f;
   border-radius: 50%;
-  padding: 25%;
-  width: 30px;
-  height: 30px;
+  float: right;
+  text-align: center;
+  padding: 7px;
+}
+.video-item .left-container .video-share .fa {
+  color: #ffffff;
 }
 .video-item .video-container {
   z-index: 1;
