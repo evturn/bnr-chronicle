@@ -105,6 +105,16 @@ body {
   text-decoration: none;
   font-weight: 300;
 }
-.footer-pagination .header-text {
+.footer-pagination .pagination-left,
+.footer-pagination .pagination-ctrls,
+.footer-pagination .pagination-prev,
+.footer-pagination .pagination-next {
+  display: inline-block;
+}
+.footer-pagination .pagination-left {
+  float: left;
+}
+.footer-pagination .pagination-ctrls {
+  float: right;
   text-transform: uppercase;
 }
