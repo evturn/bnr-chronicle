@@ -10,11 +10,14 @@ body {
   font-weight: 700;
   color: #0c3b3d;
 }
-.header-text.light {
-  color: #5fa09f;
-}
 .meta {
   color: #5fa09f;
+}
+.light {
+  color: #5fa09f;
+}
+.dark {
+  color: #0c3b3d;
 }
 .thin-lg {
   font-size: 35px;
@@ -105,6 +108,9 @@ body {
   text-decoration: none;
   font-weight: 300;
 }
+.footer-pagination .pagination-wrapper {
+  padding-top: 30px;
+}
 .footer-pagination .pagination-left,
 .footer-pagination .pagination-ctrls,
 .footer-pagination .pagination-prev,
@@ -113,8 +119,19 @@ body {
 }
 .footer-pagination .pagination-left {
   float: left;
+  font-weight: 400;
 }
 .footer-pagination .pagination-ctrls {
   float: right;
   text-transform: uppercase;
+}
+.footer-pagination .pagination-ctrls .meta {
+  font-weight: 700;
+}
+.footer-pagination .pagination-next {
+  border: 3px solid #0c3b3d;
+  border-radius: 50%;
+  padding: 25px 30px 25px 30px;
+  z-index: 1;
+  margin-top: -35px;
 }
