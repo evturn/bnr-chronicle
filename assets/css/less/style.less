@@ -151,6 +151,7 @@ body {
 
   .pagination-wrapper {
     padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .pagination-left,
@@ -171,13 +172,17 @@ body {
 
     .meta {
       font-weight: 700;
+      margin: 0;
     }
   }
   .pagination-next {
     border: 3px solid @primarydark;
     border-radius: 50%;
-    padding: 25px 30px 25px 30px;
+    padding: 30px;
     z-index: 1;
     margin-top: -35px;
+    span {
+      vertical-align: middle;
+    }
   }
 }

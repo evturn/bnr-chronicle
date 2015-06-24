@@ -110,6 +110,7 @@ body {
 }
 .footer-pagination .pagination-wrapper {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .footer-pagination .pagination-left,
 .footer-pagination .pagination-ctrls,
@@ -127,11 +128,15 @@ body {
 }
 .footer-pagination .pagination-ctrls .meta {
   font-weight: 700;
+  margin: 0;
 }
 .footer-pagination .pagination-next {
   border: 3px solid #0c3b3d;
   border-radius: 50%;
-  padding: 25px 30px 25px 30px;
+  padding: 30px;
   z-index: 1;
   margin-top: -35px;
+}
+.footer-pagination .pagination-next span {
+  vertical-align: middle;
 }
