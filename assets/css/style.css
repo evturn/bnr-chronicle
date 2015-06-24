@@ -121,7 +121,10 @@ body {
 }
 .footer-pagination .pagination-left {
   float: left;
+}
+.footer-pagination .pagination-left .header-text {
   font-weight: 400;
+  font-family: 'Roboto', sans-serif;
 }
 .footer-pagination .pagination-ctrls {
   float: right;
@@ -131,13 +134,73 @@ body {
   font-weight: 700;
   margin: 0;
 }
+.footer-pagination .pagination-prev {
+  margin-left: 15px;
+  margin-right: 15px;
+}
 .footer-pagination .pagination-next {
   border: 3px solid #0c3b3d;
   border-radius: 50%;
   padding: 30px;
   z-index: 1;
   margin-top: -35px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .footer-pagination .pagination-next span {
   vertical-align: middle;
+}
+.footer-page {
+  background-color: #d4e7ea;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+.footer-page ul {
+  padding-left: 0;
+}
+.footer-page li {
+  list-style-type: none;
+}
+.footer-page .footer-wrapper {
+  text-align: center;
+}
+.footer-page .footer-section {
+  vertical-align: top;
+  width: 19%;
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.footer-page .footer-section img.footer-img {
+  width: 100px;
+  float: right;
+}
+.footer-page .footer-section .meta {
+  font-size: 12px;
+}
+.footer-page .footer-section .link-items {
+  text-align: left;
+}
+.footer-page .footer-section .link-item {
+  font-size: 12px;
+}
+.footer-page .footer-section .link-item .meta {
+  margin-bottom: 0;
+  color: #5fa09f;
+}
+.footer-page .footer-section .link-item .meta .fa {
+  text-align: center;
+  font-size: 0.8em;
+  padding-top: 3px;
+  color: #d4e7ea;
+  border-radius: 50%;
+  background: #0c3b3d;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.footer-page .footer-section .link-item-title {
+  font-weight: 700;
+  text-transform: uppercase;
 }
