@@ -19,6 +19,9 @@ body {
   font-size: 20px;
   font-weight: 700;
   color: @primarydark;
+  &.light {
+    color: @primarylight;
+  }
 }
 
 .meta {
@@ -136,5 +139,11 @@ body {
         font-weight: 300;
       }
     }
+  }
+}
+
+.footer-pagination {
+  .header-text {
+    text-transform: uppercase;
   }
 }
