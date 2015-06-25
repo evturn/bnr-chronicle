@@ -20,10 +20,6 @@ body {
   font-family: @sanscondensed;
 }
 
-.container {
-  width: 100%;
-}
-
 .header-text {
   font-size: 20px;
   font-weight: 700;
@@ -48,25 +44,44 @@ body {
   font-family: @sans;
 }
 
-.video-main {
+.video-nav {
   background-color: @grey;
-
-  .nav-container {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: @primarydark;
-
-    .nav-hamburger {
-      float: left;
-    }
-
-    .nav-search {
-      float: right;
-    }
+  color: @primarydark;
+  @media (min-width: @screen-xs) {
+    height: 150px;
   }
 
-  .video-container {
-    padding-bottom: 30px;
+  .nav-container {
+    @media (min-width: @screen-xs) {
+      padding: 50px;
+      .nav-hamburger {
+        float: left;
+      }
+      .nav-search {
+        float: right;
+      }
+      .fa {
+        display: inline-block;
+        font-size: 5em;
+      }
+      .header-text {
+        display: none;
+      }
+    }
+
+  }
+}
+
+
+.video-main {
+  background-color: @grey;
+  @media (min-width: @screen-xs) {
+    padding: 0;
+    .video-container {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 100px;
+    }
   }
 }
 
