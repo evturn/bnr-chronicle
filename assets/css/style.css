@@ -52,62 +52,132 @@ body {
 .video-item .right-container {
   display: inline-block;
 }
-.video-item .left-container {
-  float: left;
-  text-align: right;
-  padding-right: 0;
-  padding-top: 30px;
+@media (min-width: 480px) {
+  .video-item .video-item-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
-.video-item .left-container .video-timestamp {
-  text-align: center;
-  display: inline-block;
+@media (min-width: 992px) {
+  .video-item .video-item-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
-.video-item .left-container .video-timestamp p {
-  margin: -10px 0 0 0;
+@media (min-width: 480px) {
+  .video-item .left-container {
+    width: 15%;
+    display: inline-block;
+    float: left;
+  }
 }
-.video-item .left-container .video-share {
-  width: 35px;
-  height: 35px;
-  background-color: #5fa09f;
-  border-radius: 50%;
-  float: right;
-  text-align: center;
-  padding: 7px;
+@media (min-width: 480px) {
+  .video-item .left-container .video-timestamp {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .video-item .left-container .video-timestamp .header-text {
+    font-size: 50px;
+  }
+  .video-item .left-container .video-timestamp .thin-lg {
+    font-size: 60px;
+    margin-top: -30px;
+  }
 }
-.video-item .left-container .video-share .fa {
-  color: #ffffff;
+@media (min-width: 992px) {
+  .video-item .left-container .video-timestamp {
+    text-align: right;
+    padding-right: 0;
+    padding-top: 30px;
+  }
 }
-.video-item .video-container {
-  z-index: 1;
-  margin-top: -10px;
+@media (min-width: 480px) {
+  .video-item .left-container .video-share {
+    display: none;
+  }
 }
-.video-item .right-container {
-  float: right;
-  padding-left: 0;
-  padding-top: 30px;
+@media (min-width: 992px) {
+  .video-item .left-container .video-share {
+    display: block;
+    background-color: #5fa09f;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    float: right;
+    text-align: center;
+    padding: 7px;
+  }
+  .video-item .left-container .video-share .fa {
+    color: #ffffff;
+  }
+}
+@media (min-width: 480px) {
+  .video-item .video-container {
+    z-index: 1;
+    margin-top: -20px;
+    width: 85%;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+  }
+}
+@media (min-width: 480px) {
+  .video-item .right-container {
+    float: right;
+    padding-left: 0;
+    padding-top: 30px;
+    width: 85%;
+    text-align: left;
+  }
+}
+@media (min-width: 480px) {
+  .video-item .right-container .video-title .header-text {
+    font-size: 55px;
+  }
 }
 .video-item .right-container .video-duration {
   color: #ffffff;
 }
-.video-item .right-container .video-duration .badge {
-  background-color: #5fa09f;
-  border-radius: 0px;
+@media (min-width: 480px) {
+  .video-item .right-container .video-duration .badge {
+    background-color: #5fa09f;
+    border-radius: 0px;
+    font-size: 30px;
+    padding: 10px 15px;
+  }
 }
 .video-item .right-container .video-description {
   color: #000000;
-  margin-top: 15px;
 }
-.video-item .right-container .video-description .meta {
-  font-size: 12px;
+@media (min-width: 480px) {
+  .video-item .right-container .video-description {
+    display: none;
+  }
 }
-.video-item .right-container .item-link {
-  text-align: right;
+@media (min-width: 992px) {
+  .video-item .right-container .video-description {
+    display: block;
+    margin-top: 15px;
+  }
 }
-.video-item .right-container .item-link .link {
-  color: #5fa09f;
-  font-size: 18px;
-  text-decoration: none;
-  font-weight: 300;
+@media (min-width: 480px) {
+  .video-item .right-container .item-link {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .video-item .right-container .item-link {
+    display: block;
+  }
+  .video-item .right-container .item-link .meta {
+    font-size: 12px;
+  }
+  .video-item .right-container .item-link .meta .link {
+    color: #5fa09f;
+    text-align: right;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 300;
+  }
 }
 .footer-pagination .pagination-wrapper {
   padding-top: 30px;
