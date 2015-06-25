@@ -66,7 +66,7 @@ body {
 }
 @media (min-width: 480px) {
   .video-item .left-container {
-    width: 15%;
+    width: 20%;
     display: inline-block;
     float: left;
   }
@@ -77,11 +77,11 @@ body {
     text-align: center;
   }
   .video-item .left-container .video-timestamp .header-text {
-    font-size: 50px;
+    font-size: 60px;
   }
   .video-item .left-container .video-timestamp .thin-lg {
-    font-size: 60px;
-    margin-top: -30px;
+    font-size: 80px;
+    margin-top: -35px;
   }
 }
 @media (min-width: 992px) {
@@ -114,8 +114,8 @@ body {
 @media (min-width: 480px) {
   .video-item .video-container {
     z-index: 1;
-    margin-top: -20px;
-    width: 85%;
+    margin-top: -25px;
+    width: 80%;
     border-top: 1px solid #ffffff;
     border-left: 1px solid #ffffff;
   }
@@ -125,7 +125,7 @@ body {
     float: right;
     padding-left: 0;
     padding-top: 30px;
-    width: 85%;
+    width: 80%;
     text-align: left;
   }
 }
