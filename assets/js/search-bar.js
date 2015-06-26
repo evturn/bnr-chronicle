@@ -3,6 +3,7 @@ $(function() {
 		$('.search-launch').addClass('hidden');
 		$('.collapsible').slideToggle();
 		$('.collapsible').removeClass('hidden');
+		$('.search-input').focus();
 	});
 	$(document).on('click', '.search-field-collapse', function() {
 		var $self = $(this);
@@ -10,8 +11,5 @@ $(function() {
 			$('.search-launch').removeClass('hidden');
 		});
 		$self.addClass('hidden');
-	});
-	$(document).on('click', '.search-focus', function() {
-		$('.search-input').focus();
-	});
+	});	
 });
