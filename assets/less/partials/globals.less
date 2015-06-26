@@ -10,18 +10,18 @@
 @black:          #000000;
 @grey:           #D4E7EA;
 
-.light { color: @primarylight; }
-.dark { color: @primarydark; }
-.white { color: @white; }
-.black { color: @black; }
-.grey { color: @grey; }
+.light    			 { color: @primarylight; }
+.dark     			 { color: @primarydark; }
+.white    			 { color: @white; }
+.black    			 { color: @black; }
+.grey     			 { color: @grey; }
 
-.bg-light { background-color: @primarylight; }
-.bg-dark { background-color: @primarydark; }
-.bg-white { background-color: @white; }
-.bg-black { background-color: @black; }
+.bg-light 			 { background-color: @primarylight; }
+.bg-dark  			 { background-color: @primarydark; }
+.bg-white 			 { background-color: @white; }
+.bg-black 			 { background-color: @black; }
 
-body { font-family: @sanscondensed; }
+body      			 { font-family: @sanscondensed; }
 
 .header-text {
   font-size: 20px;
@@ -29,10 +29,21 @@ body { font-family: @sanscondensed; }
   color: @primarydark; 
 }
 
-.thin-lg {
-  font-size: 35px;
-  font-weight: 300;
+.font-thin {
+	font-weight: 300;
   font-family: @sans;
+}
+.thin-sm {
+	.font-thin;
+	font-size: 18px;
+}
+.thin-md {
+	.font-thin;
+	font-size: 24px;
+}
+.thin-lg {
+  .font-thin;
+  font-size: 35px;
 }
 
 .divider {
