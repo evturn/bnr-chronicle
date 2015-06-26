@@ -7,6 +7,8 @@ var paths = require('./config/paths');
 
 gulp.task('default', ['less']);
 
+gulp.task('build', ['less', 'css']);
+
 gulp.task('less', function() {
   return gulp.src(paths.less.src)
     .pipe(g.plumber(plunger))
@@ -33,4 +35,12 @@ gulp.task('less', function() {
     }))
     .pipe(g.cssmin())
     .pipe(gulp.dest(paths.less.dest)).on('error', gutil.log);
+});
+
+gulp.task('css', function() {
+  return gulp.src(paths.css.src)
+    .pipe(g.plumber(plunger))
+    .pipe(g.cssmin())
+    .pipe(g.rename(paths.css.filename))
+    .pipe(gulp.dest(paths.css.dest));
 });

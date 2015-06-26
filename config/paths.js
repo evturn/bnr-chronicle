@@ -6,7 +6,12 @@ module.exports = {
 		filename: 'less.css'
 	},
 	css: {
-
+		src: [
+			'assets/css/bootstrap.css',
+			'assets/css/font-awesome.css'
+			],
+		dest: 'dist/css',
+		filename: 'vendor.css'
 	},
 	js: {
 
