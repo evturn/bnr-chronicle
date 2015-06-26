@@ -50,3 +50,14 @@ gulp.task('css', function() {
     .pipe(g.rename(paths.css.filename))
     .pipe(gulp.dest(paths.css.dest));
 });
+
+gulp.task('js', function() {
+  return gulp.src(paths.js.vendor.src)
+    .pipe(g.concat('vendor.js'))
+    .pipe(g.filesize())
+    .pipe(g.uglify())
+    .pipe(gulp.dest(paths.js.vendor.dest))
+    .pipe(g.filesize())
+    .pipe(g.notify('vendor.js created'))
+    .on('error', gutil.log);
+});

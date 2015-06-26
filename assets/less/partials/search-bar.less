@@ -5,6 +5,7 @@
 			float: left;
 			width: 80%;
 			margin-top: 5px;
+			.placeholder-white;
 			.search-input {
 				width: 100%;
 				height: 60px;
@@ -13,6 +14,9 @@
 				background-color: @black;
 				border: 0;
 				.font-thin;
+				&:focus {
+					outline: none;
+				}
 			}
 		}
 		.search-btn-container {
@@ -28,6 +32,9 @@
 				padding: 20px;
 				font-size: 2em;
 				z-index: 1;
+			}
+			a {
+				background: transparent;
 			}
 		}
 

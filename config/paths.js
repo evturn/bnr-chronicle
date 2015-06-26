@@ -14,6 +14,10 @@ module.exports = {
 		filename: 'vendor.css'
 	},
 	js: {
-
+		vendor: {
+			src: 'assets/js/vendor/jquery.min.js',
+			dest: 'dist/js',
+			filename: 'vendor.js'
+		}
 	}
 };
