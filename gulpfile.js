@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
+    concat = require('gulp-concat'),
     g = require('gulp-load-plugins')();
 
 var plunger = require('./config/gulp-error-handler');
@@ -40,6 +41,7 @@ gulp.task('less', function() {
 gulp.task('css', function() {
   return gulp.src(paths.css.src)
     .pipe(g.plumber(plunger))
+    .pipe(concat('min.css'))
     .pipe(g.cssmin())
     .pipe(g.rename(paths.css.filename))
     .pipe(gulp.dest(paths.css.dest));
