@@ -6,9 +6,13 @@ var gulp = require('gulp'),
 var plunger = require('./config/gulp-error-handler');
 var paths = require('./config/paths');
 
-gulp.task('default', ['less']);
+gulp.task('default', ['less', 'watch']);
 
 gulp.task('build', ['less', 'css']);
+
+gulp.task('watch', function() {
+  gulp.watch(paths.less.watch, ['less']);
+});
 
 gulp.task('less', function() {
   return gulp.src(paths.less.src)
