@@ -10,14 +10,14 @@
 <body>
 
   
-  <div class="container-fluid bg-black white search-bar hidden">
+  <div class="container-fluid bg-black white search-bar collapsible hidden">
     <div class="row">
       <div class="col-12 col-xs-12">
         <div class="search-input-container">
           <input type="text" class="search-input" placeholder="Search videos...">
         </div>
         <div class="search-btn-container">
-          <a href="#"><i class="fa fa-search"></i></a>
+          <a class="search-focus" href="#"><i class="fa fa-search"></i></a>
         </div>
       </div>
     </div>
@@ -29,8 +29,8 @@
           <span><i class="fa fa-bars"></i><p class="header-text"> Collections</p></span>
         </div>
         <div class="nav-search">
-          <span><i class="fa fa-search"></i><p class="header-text"> Search</p></span>
-          <span><i class="fa fa-times hidden"></i><p class="header-text"></p></span>
+          <span class="search-field-open search-launch"><i class="fa fa-search"></i><p class="header-text"> Search</p></span>
+          <span class="search-field-collapse collapsible hidden"><i class="fa fa-times"></i><p class="header-text"></p></span>
         </div>
       </div>
     </div>
@@ -175,5 +175,8 @@
       </div>
     </div>
   </div>
+
+  <script src="dist/js/vendor.js"></script>
+  <script src="assets/js/search-bar.js"></script>
 </body>
 </html>
