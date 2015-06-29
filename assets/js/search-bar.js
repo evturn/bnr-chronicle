@@ -12,4 +12,9 @@ $(function() {
 		});
 		$self.addClass('hidden');
 	});	
+
+	
+	$('[data-toggle="popover"]').popover({html: true});
+	
+
 });
