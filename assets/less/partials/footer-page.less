@@ -73,14 +73,38 @@
 @media (min-width: @screen-sm) {
   .footer-page { 
     padding-top: 35px;
+    padding-bottom: 60px;
   }
   .footer-section {
-    float: right;
+    float: none;
     width: 19%;
     padding-left: 15px;
     padding-right: 15px;
+    &.img-container {
+      width: 19%;
+      .footer-img {
+        display: inline-block;
+      }
+    }
+    &.about {
+      float: none;
+      .link-item,
+      .link-item-title {
+        text-align: left;
+      }
+    }
+    &.social {
+      float: none;
+    }
     &.list-hide { 
       display: inline-block; 
+    }
+    .link-item-title,
+    .link-item .meta.dark {
+      font-size: 11px;
+    }
+    .link-item-title {
+      padding-top: 0;
     }
   }
 } // media sm
