@@ -7,3 +7,9 @@ Mobile
 +02-home      Navigation
 
 -Desktop
+
+
+Share
+	-Popover color change on :focus / :active
+	-Popover margin/fixed position with button
+	+Share button display: block on video-items
