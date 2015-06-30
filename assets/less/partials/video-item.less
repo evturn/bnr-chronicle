@@ -11,7 +11,7 @@
     @media (min-width: @screen-xs) {
       padding-left: 0;
       padding-right: 0;
-      height: 320px;
+      height: 310px;
     }
     @media (min-width: @screen-sm) {
       padding-left: 15px;
@@ -43,10 +43,10 @@
           margin-top: -20px;
         }
       }
-      @media (min-width: @screen-md) {
+      @media (min-width: @screen-sm) {
+        padding-top: 25px;
         text-align: right;
-        padding-right: 0;
-        padding-top: 30px;
+        padding-right: 25px;
       }
     }
 
@@ -82,6 +82,7 @@
     @media (min-width: @screen-sm) {
       width: 50%;
       height: 100%;
+      margin-top: -10px;
     }
   } // .video-container
 
@@ -96,11 +97,12 @@
     @media (min-width: @screen-sm) {
       width: 35%;
       height: 100%;
+      padding: 25px 60px 25px 25px;
     }
     .video-title {
       @media (min-width: @screen-xs) {
         .header-text {
-          font-size: 20px;
+          font-size: 19px;
         }
       }
     }
@@ -114,6 +116,11 @@
           padding: 5px 8px;
         }
       }
+      @media (min-width: @screen-sm) {
+        .badge {
+          font-size: 11px;
+        }
+      }
     }
     .video-description {
       color: @black;
@@ -123,6 +130,8 @@
       @media (min-width: @screen-sm) {
         display: block;
         margin-top: 15px;
+        font-size: 12px;
+        color: @primarylight;
       }
     }
     .item-link { 
@@ -131,8 +140,13 @@
       }
       @media (min-width: @screen-sm) {
         display: block;
+        text-align: right;
+          right: 40px;
+          bottom: 35px;
+          position: absolute;
         .meta { 
           font-size: 12px; 
+          color: @darkgrey;
           .link {
             color: @primarylight; 
             text-align: right;
