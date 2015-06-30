@@ -1,13 +1,13 @@
 .popover.fade.top.in {
-	top: 270px;
-  left: 15px;
+	top: 270px !important;
+  left: 15px !important;
   height: 275px;
   width: 200px;
   border-radius: 30px;
   font-size: 22px;
   .popover-content {
   	text-align: left;
-	  padding: 40px 10px;
+	  padding: 35px;
 	  a {
 	  	color: @primarydark;
 	  	padding-bottom: 30px;
@@ -15,6 +15,42 @@
 	  .fa {
 	  	font-size: 1em;
 	  	width: 30px;
+	  	display: inline-block;
+	  }
+	  ul {
+	  	padding-left: 0;
+	  }
+	  li {
+	  	list-style-type: none;
 	  }
   }
+}
+
+.popover.top>.arrow {
+  border-top-color: none;
+  border-top-color: @grey;
+  margin-left: -20px;
+  bottom: -9px;
+}
+.popover.top>.arrow:before {
+  border-top-color: none;
+}
+.popover.top>.arrow:after {
+  border-top-color: none;
+}
+.popover.top>.arrow:after {
+  bottom: 1px;
+  margin-left: -10px;
+  content: " ";
+  border-top-color: @grey;
+  border-bottom-width: 0;
+ }
+
+
+.popover {
+	border: 0;
+	border-radius: 0;
+	-webskit-box-shadow: 0;
+	box-shadow: 0 0 0 0;
+	background-color: @grey;
 }
