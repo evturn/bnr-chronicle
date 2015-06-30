@@ -5,6 +5,7 @@
   .nav-container {
     @media (min-width: @screen-xs) {
       padding: 20px;
+      width: 100%;
       .nav-hamburger { float: left; }
       .nav-search { float: right; }
       .header-text { display: none; }
@@ -14,6 +15,15 @@
         cursor: pointer;
       }
     }
-
+    @media (min-width: @screen-sm) {
+      padding: 35px;
+      .header-text { 
+        display: inline-block; 
+        margin-left: 10px;
+      }
+      .fa {
+        font-size: 1.5em;
+      }
+    }
   }
 }

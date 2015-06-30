@@ -1,6 +1,5 @@
 .video-item {
   background-color: @white;
-  padding-bottom: 80px;
   border-bottom: 1px solid @grey;
   .left-container,
   .video-container,
@@ -12,6 +11,7 @@
     @media (min-width: @screen-xs) {
       padding-left: 0;
       padding-right: 0;
+      padding-bottom: 80px;
     }
     @media (min-width: @screen-md) {
       padding-left: 15px;
@@ -75,6 +75,9 @@
       border-top: 1px solid @white;
       border-left: 1px solid @white;
     }
+    @media (min-width: @screen-sm) {
+      width: 50%;
+    }
   } // .video-container
 
   .right-container {
@@ -84,6 +87,9 @@
       padding: 10px;
       width: 80%;
       text-align: left;
+    }
+    @media (min-width: @screen-sm) {
+      width: 30%;
     }
     .video-title {
       @media (min-width: @screen-xs) {
@@ -108,7 +114,7 @@
       @media (min-width: @screen-xs) {
         display: none;
       }
-      @media (min-width: @screen-md) {
+      @media (min-width: @screen-sm) {
         display: block;
         margin-top: 15px;
       }
@@ -117,7 +123,7 @@
       @media (min-width: @screen-xs) {
         display: none;
       }
-      @media (min-width: @screen-md) {
+      @media (min-width: @screen-sm) {
         display: block;
         .meta { 
           font-size: 12px; 
