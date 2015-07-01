@@ -14,27 +14,29 @@
         height: 100%;
         top: 0;
         left: 0;
-        padding: 10px;
+        padding: 15px;
         .header-text,
         .thin-lg {
           color: @white;
+          -webkit-font-smoothing: antialiased;
         }
         .video-play {
           display: none;
         }
         .video-timestamp {
           display: block;
-          width: 11%;
-          height: 50%;
-          text-align: center;
+          width: 100%;
+          height: 65%;
+          text-align: left;
           .header-text {
-            font-size: 20px;
+            font-size: 22px;
             margin-bottom: 0;
+          }
+          .thin-lg {
+            margin-top: -10px;
           }
         }
         .video-title {
-          -webkit-font-smoothing: antialiased;
-          height: 50%;
           font-weight: 600;
           color: @white;
           display: block;
@@ -53,6 +55,20 @@
       }
     }
   }
+  @media (min-width: 520px) {
+    .video-container .shadow {
+      .video-timestamp {
+        height: 75%;
+      }
+      .video-title {
+        width: 88%;
+        .header-text {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
   @media (min-width: @screen-sm) {
   	padding: 15px 40px 40px 40px;
   	.video-container {
