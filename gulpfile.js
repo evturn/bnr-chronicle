@@ -5,12 +5,13 @@ var gulp = require('gulp'),
 var options = require('./config/gulp-options');
 var paths = require('./config/paths');
 
-gulp.task('default', ['less', 'watch']);
+gulp.task('default', ['less', 'lint', 'watch']);
 
 gulp.task('build', ['less', 'css']);
 
 gulp.task('watch', function() {
   gulp.watch(paths.less.watch, ['less']);
+  gulp.watch(paths.jshint.watch, ['lint']);
 });
 
 gulp.task('less', function() {
@@ -42,4 +43,11 @@ gulp.task('js', function() {
     .pipe(g.filesize())
     .pipe(g.notify('vendor.js created'))
     .on('error', gutil.log);
+});
+
+gulp.task('lint', function() {
+  gulp.src(paths.jshint.src)
+    .pipe(g.plumber(options.plumber))
+    .pipe(g.jshint())
+    .pipe(g.notify(options.notify.jshint));
 });

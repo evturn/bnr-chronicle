@@ -21,6 +21,28 @@ module.exports = {
 			],
 			dest: 'dist/js',
 			filename: 'vendor.js'
-		}
+		},
+		src: [
+			'assets/js/**/*.js',
+			'!assets/js/vendor/**/*.js'
+		],
+		watch: [
+			'assets/js/**/*.js',
+			'!assets/js/vendor/**/*.js'
+		]
+	},
+	jshint: {
+		src: [
+			'assets/js/**/*.js',
+			'!assets/js/vendor/**/*.js',
+			'config/**/*.js',
+			'gulpfile.js'
+		],
+		watch: [
+			'assets/js/**/*.js',
+			'!assets/js/vendor/**/*.js',
+			'config/**/*.js',
+			'gulpfile.js'
+		]
 	}
 };
