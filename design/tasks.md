@@ -16,4 +16,4 @@ Share
 	
 
 Issues
-	-Overflow from pagination "Next" button pushing on margin right
+	+Overflow from pagination "Next" button pushing on margin right
