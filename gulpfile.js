@@ -2,7 +2,7 @@ var gulp = require('gulp'),
     gutil = require('gulp-util'),
     g = require('gulp-load-plugins')();
 
-var options = require('./config/options');
+var options = require('./config/gulp-options');
 var paths = require('./config/paths');
 
 gulp.task('default', ['less', 'watch']);
