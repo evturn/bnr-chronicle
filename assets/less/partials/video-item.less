@@ -6,7 +6,6 @@
   .right-container {
     display: inline-block;
   }
-
   .video-item-wrapper {
     background-color: @white;
     padding-left: 0;
@@ -14,9 +13,12 @@
     min-height: 310px;
     padding-bottom: 50px;
     @media (min-width: @screen-sm) {
-      padding-left: 15px;
-      padding-right: 15px;
-
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    @media (min-width: @screen-lg) {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -25,15 +27,20 @@
     display: inline-block;
     float: left;
     background-color: @white;
+    padding-left: 15px;
     @media (min-width: @screen-sm) {
+      padding-left: 25px;
       width: 15%;
-      height: 100%;
-      padding-right: 25px;
     }
-
+    @media (min-width: @screen-md) {
+      width: 10%;
+    }
     .video-timestamp {
       padding-top: 20px;
-      text-align: center;
+      text-align: left;
+      @media (min-width: @screen-sm) {
+        padding-top: 25px;
+      }
       .header-text {
         font-size: 25px;
       }
@@ -41,24 +48,17 @@
         font-size: 35px;
         margin-top: -20px;
       }
-      @media (min-width: @screen-sm) {
-        padding-top: 25px;
-        padding-bottom: 85px;
-        text-align: right;
-      }
     }
-
     .video-share {
       display: none;
       @media (min-width: @screen-sm) {
         display: block;
         background-color: @primarylight;
-        width: 35px;
-        height: 35px;
+        width: 45px;
+        height: 45px;
         border-radius: 50%;
-        float: right;
         text-align: center;
-        padding: 7px;
+        padding: 12px;
         .fa {
           color: @white;
         }
@@ -73,9 +73,12 @@
     margin-top: -15px;
     width: 80%;
     @media (min-width: @screen-sm) {
-      width: 50%;
+      width: 45%;
       height: 100%;
       margin-top: -10px;
+    }
+    @media (min-width: @screen-md) {
+      width: 55%;
     }
   } // .video-container
 
@@ -86,9 +89,12 @@
     width: 80%;
     text-align: left;
     @media (min-width: @screen-sm) {
-      width: 35%;
+      width: 40%;
       height: 100%;
       padding: 25px 60px 25px 25px;
+    }
+    @media (min-width: @screen-md) {
+      width: 35%;
     }
     .video-title {
       .header-text {
@@ -117,7 +123,6 @@
         display: block;
         margin-top: 15px;
         font-size: 12px;
-        color: @primarylight;
       }
     }
     .item-link { 
