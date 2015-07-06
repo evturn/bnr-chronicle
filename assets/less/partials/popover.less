@@ -1,10 +1,10 @@
 .popover.fade.top.in,
 .popover.fade.top {
 	@media (min-width: @screen-xs) {
-	  left: 12px !important;  // Overrides CSS on randomly generated ID
 	  height: 220px;
 	  width: 165px;
 	  border-radius: 30px;
+	  margin-left: 15px;
 	  font-size: 22px;
 	  .popover-content {
 	  	text-align: left;
@@ -30,33 +30,62 @@
 	  }
 	}
 }
-
-
+	
+@media (min-width: @screen-xs) {
 	.popover.top>.arrow {
-	  border-top-color: none;
-	  border-top-color: @grey;
-	  margin-left: -21px;
-	  bottom: -9px;
+		border-top-color: none;
+		border-top-color: @grey;
+		margin-left: -35px;
+		bottom: -9px;
 	}
-	.popover.top>.arrow:before {
-	  border-top-color: none;
-	}
-	.popover.top>.arrow:after {
-	  border-top-color: none;
-	}
-	.popover.top>.arrow:after {
-	  bottom: 1px;
-	  margin-left: -9px;
-	  content: " ";
-	  border-top-color: @grey;
-	  border-bottom-width: 0;
-	 }
+}
 
-
-	.popover {
-		border: 0;
-		border-radius: 0;
-		-webskit-box-shadow: 0;
-		box-shadow: 0 0 0 0;
-		background-color: @grey;
+@media (min-width: @screen-sm) {
+	.popover.top>.arrow {
+		border-top-color: none;
+		border-top-color: @grey;
+		margin-left: -35px;
+		bottom: -9px;
 	}
+}
+
+@media (min-width: @screen-md) {
+	.popover.top>.arrow {
+		border-top-color: none;
+		border-top-color: @grey;
+		margin-left: -35px;
+		bottom: -9px;
+	}
+}
+@media (min-width: @screen-lg) {
+	.popover.fade.top, 
+	.popover.fade.top.in {
+		margin-left: 50px;
+	}
+	.popover.top>.arrow {
+		border-top-color: none;
+		border-top-color: @grey;
+		margin-left: -60px;
+		bottom: -9px;
+	}
+}
+
+.popover.top>.arrow:before {
+  border-top-color: none;
+}
+.popover.top>.arrow:after {
+  border-top-color: none;
+  bottom: 1px;
+  margin-left: -9px;
+  content: " ";
+  border-top-color: @grey;
+  border-bottom-width: 0;
+ }
+
+.popover {
+	border: 0;
+	border-radius: 0;
+	-webskit-box-shadow: 0;
+	box-shadow: 0 0 0 0;
+	background-color: @grey;
+}
