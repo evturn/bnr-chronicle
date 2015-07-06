@@ -10,4 +10,8 @@ router.get('/results', function(req, res) {
 	res.render('app/results');
 });
 
+router.get('/video', function(req, res) {
+	res.render('app/video');
+});
+
 module.exports = router;
