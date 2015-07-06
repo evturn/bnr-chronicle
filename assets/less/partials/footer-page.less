@@ -1,74 +1,71 @@
-@media (min-width: @screen-xs) {
-  .footer-page {
-    background-color: @grey;
-    font-family: @sans;
-    padding-top: 40px;
+.footer-page {
+  background-color: @grey;
+  font-family: @sans;
+  padding-top: 40px;
+}
+.footer-wrapper { 
+  text-align: center; 
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.footer-section {
+  vertical-align: top;
+  display: inline-block;
+  &.social {  
+    float: left; 
+  }    
+  &.list-hide { 
+    display: none; 
   }
-  .footer-wrapper { 
-    text-align: center; 
+  &.img-container {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    .footer-img {
+      display: block;
+      width: 100px;
+    }
   }
-  .footer-section {
-    vertical-align: top;
-    display: inline-block;
-    &.social {  
-      float: left; 
-    }    
-    &.list-hide { 
-      display: none; 
-    }
-    &.img-container {
-      width: 100%;
-      .footer-img {
-        display: block;
-        width: 100px;
-      }
-    }
-    &.about {
-      float: right;
-      .link-item,
-      .link-item-title {
-        text-align: right;
-      } 
-    }
-    .link-items {
-      text-align: left;
-    }
+  &.about {
+    float: right;
+    .link-item,
     .link-item-title {
-      padding-top: 30px;
-      font-size: 14px;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    .link-item .meta.dark {
-      color: @primarydark;
-      font-size: 14px;
-      padding-bottom: 5px;
-    }
-    .link-item {
-      font-size: 12px;
-      .meta {
-        margin-bottom: 0;
-        color: @primarylight;
-      .fa {
-          text-align: center;
-          font-size: 0.8em;
-          padding-top: 3px;
-          color: @grey;
-          border-radius: 50%;
-          background: @primarydark;
-          width: 15px;
+      text-align: right;
+    } 
+  }
+  .link-items {
+    text-align: left;
+  }
+  .link-item-title {
+    padding-top: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .link-item .meta.dark {
+    color: @primarydark;
+    font-size: 14px;
+    padding-bottom: 5px;
+  }
+  .link-item {
+    font-size: 12px;
+    .meta {
+      margin-bottom: 0;
+      color: @primarylight;
+    .fa {
+        text-align: center;
+        font-size: 0.8em;
+        padding-top: 3px;
+        color: @grey;
+        border-radius: 50%;
+        background: @primarydark;
+        width: 15px;
 
-          height: 15px;
-          margin-right: 5px;
-        }
+        height: 15px;
+        margin-right: 5px;
       }
     }
   }
-    
-} // media xs
+}
 
 @media (min-width: @screen-sm) {
   .footer-page { 
@@ -107,4 +104,4 @@
       padding-top: 0;
     }
   }
-} // media sm
+}

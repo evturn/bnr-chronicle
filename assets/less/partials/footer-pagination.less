@@ -1,26 +1,19 @@
 .footer-pagination {
-  @media (min-width: @screen-xs) {
-    min-height: 250px;
-    background-color: @white;
-  }
+  min-height: 250px;
+  background-color: @white;
   @media (min-width: @screen-sm) {
     min-height: 160px;
   }
   .pagination-wrapper {
-    @media (min-width: @screen-xs) {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
-
-  .pagination-page {
-    @media (min-width: @screen-xs) {
-      position: absolute;
-      bottom: -130px;
-      width: 145px;
-      text-align: right;
-      margin-left: 35px;
-    }
+  .pagination-page {  
+    position: absolute;
+    bottom: -130px;
+    width: 145px;
+    text-align: right;
+    margin-left: 35px;
     .header-text {
       font-weight: 400;
       font-family: @sans;
@@ -36,33 +29,32 @@
 
   .pagination-ctrls {
     text-transform: uppercase;
-    @media (min-width: @screen-xs) {
-      z-index: 1;
-      margin-top: -40px;
-      position: absolute;
-      right: -15px;
-      .prev {
-        display: inline-block;
-        margin-left: 15px;
-        margin-right: 15px;   
-      }
-      .next {
-        background-color: @white;
-        border: 5px solid @primarydark;
-        border-radius: 50%;
-        display: inline-block;
-        padding: 50px;
-      }
-      .meta {
-        font-weight: 700;
-        margin: 0;
-        font-size: 16px;
-        .thin-lg.dark{
-          vertical-align: middle;
-          font-size: 50px;
-        }  
-      }
+    z-index: 1;
+    margin-top: -40px;
+    position: absolute;
+    right: -15px;
+    .prev {
+      display: inline-block;
+      margin-left: 15px;
+      margin-right: 15px;   
     }
+    .next {
+      background-color: @white;
+      border: 5px solid @primarydark;
+      border-radius: 50%;
+      display: inline-block;
+      padding: 50px;
+    }
+    .meta {
+      font-weight: 700;
+      margin: 0;
+      font-size: 16px;
+      .thin-lg.dark{
+        vertical-align: middle;
+        font-size: 50px;
+      }  
+    }
+    
     @media (min-width: @screen-sm) {
       right: 60px;
       .prev {
@@ -81,22 +73,18 @@
 .video-single.footer-pagination {
   
   .pagination-wrapper {
-    @media (min-width: @screen-xs) {
-      height: 225px;
-      position: relative;
-    }
+    height: 225px;
+    position: relative;
   }
   .pagination-ctrls {
-    text-transform: uppercase;
-    @media (min-width: @screen-xs) {
-      margin-left: 20%;
-      z-index: 1;
-      margin-top: -40px;
-      position: absolute;
-      right: inherit;
-      border: 5px solid @primarydark;
-      border-radius: 50%;
-    }
+    text-transform: uppercase;    
+    margin-left: 20%;
+    z-index: 1;
+    margin-top: -40px;
+    position: absolute;
+    right: inherit;
+    border: 5px solid @primarydark;
+    border-radius: 50%;
     @media (min-width: 480px) {
       margin-left: 30%;
     }
@@ -108,30 +96,27 @@
     }
     .next {
       background-color: @white;
-      @media (min-width: @screen-xs) {
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        padding: 50px;
-        border: none;
-      }
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      padding: 50px;
+      border: none;
     }
     .meta {
       font-weight: 700;
-      @media (min-width: @screen-xs) {
-        &:first-child {
-          margin-bottom: -15px;
-          margin-top: 15px;
-        }
-        margin: 0;
-        height: 45px;
-        width: 100%;
-        font-size: 22px;
-        .thin-lg.dark{
-          vertical-align: middle;
-          font-size: 50px;
-        }  
+      &:first-child {
+        margin-bottom: -15px;
+        margin-top: 15px;
       }
+      margin: 0;
+      height: 45px;
+      width: 100%;
+      font-size: 22px;
+      .thin-lg.dark{
+        vertical-align: middle;
+        font-size: 50px;
+      }  
+    
     }
   }
 } // Video Single
