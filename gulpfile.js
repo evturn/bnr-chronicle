@@ -7,7 +7,7 @@ var paths = require('./config/paths');
 
 gulp.task('default', ['less', 'lint', 'watch']);
 
-gulp.task('build', ['less', 'css']);
+gulp.task('build', ['less', 'css', 'jslib']);
 
 gulp.task('watch', function() {
   gulp.watch(paths.less.watch, ['less']);
@@ -34,7 +34,7 @@ gulp.task('css', function() {
     .pipe(gulp.dest(paths.css.dest));
 });
 
-gulp.task('js', function() {
+gulp.task('jslib', function() {
   return gulp.src(paths.js.vendor.src)
     .pipe(g.concat(paths.js.vendor.filename))
     .pipe(g.filesize())

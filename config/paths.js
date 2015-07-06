@@ -14,35 +14,39 @@ module.exports = {
 		filename: 'vendor.css'
 	},
 	js: {
-		vendor: {
-			src: [
-				'assets/js/vendor/jquery.min.js',
-				'assets/js/vendor/bootstrap.min.js'
-			],
-			dest: 'dist/js',
-			filename: 'vendor.js'
-		},
 		src: [
 			'assets/js/**/*.js',
-			'!assets/js/vendor/**/*.js'
+			'!assets/js/lib/**/*.js'
 		],
 		watch: [
 			'assets/js/**/*.js',
-			'!assets/js/vendor/**/*.js'
-		]
+			'!assets/js/lib/**/*.js'
+		],
+		dest: 'dist/js',
+		filename: 'scripts.js',
+		vendor: {
+			src: [
+				'assets/js/lib/jquery.min.js',
+				'assets/js/lib/bootstrap.min.js'
+			],
+			dest: 'dist/js',
+			filename: 'vendor.js'
+		}
 	},
 	jshint: {
 		src: [
 			'assets/js/**/*.js',
-			'!assets/js/vendor/**/*.js',
+			'!assets/js/lib/**/*.js',
 			'config/**/*.js',
-			'gulpfile.js'
+			'gulpfile.js',
+			'server.js'
 		],
 		watch: [
 			'assets/js/**/*.js',
-			'!assets/js/vendor/**/*.js',
+			'!assets/js/lib/**/*.js',
 			'config/**/*.js',
-			'gulpfile.js'
+			'gulpfile.js',
+			'server.js'
 		]
 	}
 };
