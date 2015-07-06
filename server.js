@@ -1,4 +1,5 @@
 var express = require('express'),
+		router = require('./config/routes/router'),
 		hbs = require('./config/handlebars'),
 		root = __dirname + '/dist';
 

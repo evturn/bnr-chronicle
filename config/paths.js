@@ -38,6 +38,7 @@ module.exports = {
 			'assets/js/**/*.js',
 			'!assets/js/lib/**/*.js',
 			'config/**/*.js',
+			'routes/**/*.js',
 			'gulpfile.js',
 			'server.js'
 		],
@@ -45,6 +46,7 @@ module.exports = {
 			'assets/js/**/*.js',
 			'!assets/js/lib/**/*.js',
 			'config/**/*.js',
+			'routes/**/*.js',
 			'gulpfile.js',
 			'server.js'
 		]
