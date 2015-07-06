@@ -7,11 +7,12 @@ var paths = require('./config/paths');
 
 gulp.task('default', ['less', 'lint', 'watch']);
 
-gulp.task('build', ['less', 'css', 'jslib']);
+gulp.task('build', ['less', 'css', 'jslib', 'js']);
 
 gulp.task('watch', function() {
   gulp.watch(paths.less.watch, ['less']);
   gulp.watch(paths.jshint.watch, ['lint']);
+  gulp.watch(paths.js.watch, ['js']);
 });
 
 gulp.task('less', function() {
@@ -34,8 +35,17 @@ gulp.task('css', function() {
     .pipe(gulp.dest(paths.css.dest));
 });
 
+gulp.task('js', function() {
+  return gulp.src(paths.js.src)
+    .pipe(g.plumber(options.plumber))
+    .pipe(g.concat(paths.js.filename))
+    .pipe(gulp.dest(paths.js.dest))
+    .on('error', gutil.log);
+});
+
 gulp.task('jslib', function() {
   return gulp.src(paths.js.vendor.src)
+    .pipe(g.plumber(options.plumber))
     .pipe(g.concat(paths.js.vendor.filename))
     .pipe(g.filesize())
     .pipe(g.uglify())
