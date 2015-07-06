@@ -18,3 +18,15 @@ Share
 
 Issues
 	+Overflow from pagination "Next" button pushing on margin right
+
+
+
+
+Margins- timestamp search results
+Share button anchor to bottom left of the video container
+
+Share button :hover
+
+Boost color on category in main video
+
+video description color
