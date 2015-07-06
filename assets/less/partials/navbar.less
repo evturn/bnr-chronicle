@@ -6,8 +6,26 @@
     @media (min-width: @screen-xs) {
       padding: 20px;
       width: 100%;
-      .nav-hamburger { float: left; }
-      .nav-search { float: right; }
+      .nav-hamburger { 
+        float: left;
+        display: inline-block;
+        width: 25%;
+      }
+      .nav-logo { 
+        display: inline-block;
+        text-align: center;
+        width: 50%;
+        margin-top: -5px;
+        .img-responsive {
+          width: 75px;
+          display: inline-block;
+        }
+      }
+      .nav-search { 
+        float: right;
+        text-align: right;
+        width: 25%;
+      }
       .header-text { display: none; }
       .fa {
         display: inline-block;
