@@ -3,6 +3,9 @@ gulp-autoprefixer
 gulp-plumbler
 gulp-notify
 */
+var gulp = require('gulp-util'),
+    gutil = require('gulp-util'),
+    $ = require('gulp-load-plugins')();
 
 module.exports = {
   autoprefixer: {
@@ -23,7 +26,7 @@ module.exports = {
     errorHandler: function(err) {
       gutil.beep();
       console.log(err);
-      G.notify(err);
+      $.notify(err);
       this.emit('end');
     }
   },

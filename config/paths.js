@@ -8,7 +8,8 @@ module.exports = {
 	css: {
 		src: [
 			'assets/css/bootstrap.css',
-			'assets/css/font-awesome.css'
+			'assets/css/font-awesome.css',
+			'assets/css/animate.css'
 			],
 		dest: 'dist/css',
 		filename: 'vendor.css'
@@ -27,7 +28,8 @@ module.exports = {
 		vendor: {
 			src: [
 				'assets/js/lib/jquery.min.js',
-				'assets/js/lib/bootstrap.min.js'
+				'assets/js/lib/bootstrap.min.js',
+				'assets/js/lib/wow.js'
 			],
 			dest: 'dist/js',
 			filename: 'vendor.js'

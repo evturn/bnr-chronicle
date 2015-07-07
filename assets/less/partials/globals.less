@@ -77,6 +77,28 @@ body {
 .video-share {
 	cursor: pointer;
 }
+.video-share {
+  display: none;
+  li { list-style-type: none; }
+  @media (min-width: @screen-sm) {
+    display: block;
+    background-color: @primarylight;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 12px;
+    &:hover {
+      background-color: @grey;
+      .fa{
+        color: @primarydark;
+      }
+    }
+    .fa {
+      color: @white;
+    }
+  }
+}
 
 .divider {
 	text-transform: uppercase;
