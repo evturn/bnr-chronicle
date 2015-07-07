@@ -3,7 +3,6 @@
 
 @sans:           'Roboto', sans-serif;
 @sanscondensed:  'Roboto Condensed', sans-serif;
-
 @primarylight:   #5FA09F;
 @primarydark:    #0C3B3D;
 @white:          #ffffff;
@@ -11,14 +10,12 @@
 @grey:           #D4E7EA;
 @lightgrey:      #EDF3F4;
 @darkgrey:       #769499;
-
 .light    			 { color: @primarylight; }
 .dark     			 { color: @primarydark; }
 .white    			 { color: @white; }
 .black    			 { color: @black; }
 .grey     			 { color: @grey; }
 .darkgrey				 { color: @darkgrey; }
-
 .bg-light 			 { background-color: @primarylight; }
 .bg-dark  			 { background-color: @primarydark; }
 .bg-white 			 { background-color: @white; }
@@ -29,15 +26,14 @@
 body { 
 	font-family: @sanscondensed; 
 	position: relative;
-  overflow-x: hidden;
+  overflow-y: scroll;
+	overflow-x: hidden;
   margin: 0;
   background-color: @grey;
   -webkit-font-smoothing: antialiased;
 }
 
 .wrapper {
-	padding-right: 0;
-	padding-left: 0;
 	@media (min-width: @screen-sm) {
 	  padding-right: 15px;
 	  padding-left: 15px;
@@ -46,6 +42,14 @@ body {
 		max-width: @screen-lg;
 	}
 }
+
+[class$="-wrapper"] {
+	position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
 
 .header-text {
   font-size: 20px;

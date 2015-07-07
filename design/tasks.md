@@ -23,6 +23,7 @@ Issues
 
 
 Margins- timestamp search results
+
 Share button anchor to bottom left of the video container
 
 Share button :hover
