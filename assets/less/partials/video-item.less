@@ -59,15 +59,75 @@
     z-index: 1;
     margin-top: -15px;
     width: 80%;
+    cursor: pointer;
+    position: relative;
+    .shadow {
+      background: transparent;
+      height: 100%;
+      width: 100%;
+      z-index: 10;
+      top: 0;
+      display: block;
+      position: absolute;
+      .video-play {
+        height: 75%;
+        text-align: center;
+        position: relative;
+        padding-left: 37%;
+        display: block;
+        .btn-container {
+          position: absolute;
+          margin-top: 12%;
+          border: 5px solid @white;
+          border-radius: 50%;
+          height: 90px;
+          width: 90px;
+          background-color: @black;
+          opacity: 0.6;
+        }
+        .fa {
+          margin-top: 35%;
+          color: @white;
+          font-size: 2em;
+          margin-left: 5px;
+        }
+        @media (min-width: @screen-xs) {
+          padding-left: 41%;
+          .btn-container {
+            margin-top: 20%;  
+          }
+        }
+        @media (min-width: @screen-sm) {
+          padding-left: 35%;
+          .btn-container {
+            margin-top: 15%;  
+          }
+        }
+        @media (min-width: @screen-md) {
+          padding-left: 40%;
+          .btn-container {
+            margin-top: 20%;  
+          }         
+        }
+      }
+    }
     @media (min-width: @screen-sm) {
-      width: 45%;
+      width: 43%;
       height: 100%;
       margin-top: -10px;
+      &:hover .shadow {
+        background-color: @black;
+        opacity: 0.4;
+        .video-play .btn-container {
+          background-color: @black;
+          opacity: 1;
+        }
+      }
     }
     @media (min-width: @screen-md) {
       width: 55%;
     }
-  } // .video-container
+  }
 
   .right-container {
     float: right;
