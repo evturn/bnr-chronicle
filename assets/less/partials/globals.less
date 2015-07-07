@@ -32,7 +32,6 @@ body {
   background-color: @grey;
   -webkit-font-smoothing: antialiased;
 }
-
 .wrapper {
 	@media (min-width: @screen-sm) {
 	  padding-right: 15px;
@@ -49,7 +48,6 @@ body {
   padding-left: 15px;
   width: 100%;
 }
-
 
 .header-text {
   font-size: 20px;
@@ -74,30 +72,44 @@ body {
   font-size: 35px;
 }
 
-.video-share {
-	cursor: pointer;
+.left-container {
+	.video-share {
+	  display: none;
+	  @media (min-width: @screen-sm) {
+			display: block;
+			cursor: pointer;
+		}
+	}
 }
+
+.video-main-links {
+	.video-share {
+		float: left;
+	}
+}
+
 .video-share {
-  display: none;
   li { list-style-type: none; }
-  @media (min-width: @screen-sm) {
-    display: block;
-    background-color: @primarylight;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    text-align: center;
-    padding: 12px;
-    &:hover {
-      background-color: @grey;
-      .fa{
-        color: @primarydark;
-      }
-    }
-    .fa {
-      color: @white;
-    }
+  background-color: @primarylight;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 12px;
+	cursor: pointer;
+  .fa {
+    color: @white;
   }
+  &:hover {
+		background-color: @grey;
+		.fa{
+			color: @primarydark;
+		}
+	}
+	@media (min-width: @screen-lg) {
+  	float: right;
+  	margin-right: 25px;
+	}
 }
 
 .divider {

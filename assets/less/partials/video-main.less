@@ -1,4 +1,5 @@
 .video-main {
+  cursor: pointer;
   background-color: @grey;
   .video-main-wrapper {
     .box-shadow(0px 0px 22px -4px rgba(0,0,0,0.75););
@@ -68,8 +69,8 @@
     }
 
     @media (min-width: @screen-sm) {
-    	padding: 15px 40px 40px 40px;
-    	.video-main-wrapper {
+      padding: 15px 40px 40px 40px;
+      .video-main-wrapper {
         margin-bottom: 0;
         &:hover .shadow {
           .transition(all 0.2s ease);
@@ -107,6 +108,7 @@
               margin-top: 35%;
               color: @white;
               font-size: 2em;
+              margin-left: 5px;
             }
           }
           .video-timestamp {
@@ -124,7 +126,42 @@
             }
           }
         }
-    	}
+      }
     }
+  }
+  @media (min-width: @screen-lg) {
+    .video-main-wrapper .shadow .video-play {
+      height: 80%;
+    }
+    .video-main-wrapper .shadow .video-title .header-text {
+      font-size: 32px;
+    }
+    .video-main-wrapper .shadow .video-timestamp {
+      width: 8%;
+      text-align: center;
+    }
+    .video-main-wrapper .shadow .video-timestamp .thin-lg {
+      font-size: 46px;
+      margin-top: -20px;
+    }
+    .video-main-wrapper .shadow .video-timestamp .header-text {
+      font-size: 30px
+    }
+  }
+}
+
+@media (min-width: @screen-md) {
+  .video-item .video-item-wrapper .left-container .video-timestamp {
+    height: 245px;
+  }
+}
+
+@media (min-width: @screen-lg) {
+  .video-item .video-item-wrapper .left-container .video-timestamp {
+    text-align: center;
+    height: 315px;
+  }
+  .video-item .video-item-wrapper .left-container .video-share {
+    text-align: center;
   }
 }

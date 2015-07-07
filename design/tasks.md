@@ -19,6 +19,7 @@ Share
 Issues
 	+Overflow from pagination "Next" button pushing on margin right
 
+navigation drop down text fade in
 
 
 
