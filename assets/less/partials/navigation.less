@@ -3,6 +3,7 @@
 	height: 100vh;
 	opacity: 0.95;
 	position: absolute;
+	width: 100vw;
 	.transition(all 0.2s ease);
 	.links-container {
 	  padding-top: 30px;
@@ -30,6 +31,8 @@
 		text-align: center;
 	}
 	.header-text {
-	
+		@media (min-width: @screen-sm) {
+		  font-size: 32px;
+		}
 	}
 }

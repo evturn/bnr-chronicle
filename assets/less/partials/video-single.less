@@ -8,14 +8,14 @@
 	padding: 15px;
 	background-color: @white;
 	@media (min-width: @screen-sm) {
-	  .header,
-	  .video-description {
-	  	padding-left: 25px;
-  		padding-right: 25px;
-	  }
+		padding-left: 65px;
+		padding-right: 65px;
 	}
-	.meta {
-		text-transform: uppercase;
+	@media (min-width: @screen-md) {
+		padding-left: 25px;
+	  padding-right: 25px;
+	}
+	.meta a {
 		font-weight: 800;
 		font-size: 16px;
 	}
@@ -38,21 +38,25 @@
 		text-transform: uppercase;
 	}
 }
-.video-main-links {
+
+.video-links {
 	background-color: @white;
 	height: 90px;
-	padding: 10px;
-  .item-link {
-  	float: right;
-  	.meta { 
-      font-size: 22px; 
-      .link {
-        color: @primarylight; 
-        text-align: right;
-        font-size: 30px;
-        text-decoration: none;
-        font-weight: 300;
-      }
+	padding-top: 25px;
+	.video-share {
+		float: left;
+	}
+}
+.item-link {
+	float: right;
+	.meta { 
+    font-size: 22px; 
+    .link {
+      color: @primarylight; 
+      text-align: right;
+      font-size: 30px;
+      text-decoration: none;
+      font-weight: 300;
     }
- 	}
+  }
 }
