@@ -1,55 +1,40 @@
-new WOW().init();
-
 $(function() {
 		
 	var $wrapper = $('.navigation-wrapper');
-	var $closeBtn = $('.navigation-close');
-	var $links = $('.links-container');
+	var links = '.links-container';
+	var closeBtn = '.navigation-close';
+	var $navigationText = $(links + ', ' + closeBtn);
 
 	$(document).on('click', '.nav-hamburger', function() {
-		
-		function openNavigation() {
-			$wrapper
-				.removeClass('slideOutUp')
-				.removeClass('hidden');
-		}
-
-			
-		function showLinks() {
-			$links
-				.removeClass('fadeOut')
-				.addClass('fadeIn')
-				.removeClass('hidden');
-			$closeBtn
-				.removeClass('fadeOut')
-				.addClass('fadeIn')
-				.removeClass('hidden');
-		}
-
 		openNavigation();
 		setTimeout(showLinks, 800);
-
 	});
 
 	$(document).on('click', '.navigation-close', function() {
-
-		function hideLinks() {
-				$links
-					.addClass('fadeOut');
-				$closeBtn
-					.addClass('fadeOut');
-			}
-
-
-		function closeNavigation() {
-			$wrapper.addClass('slideOutUp');
-		}
-			
 		hideLinks();
 		setTimeout(closeNavigation, 500);
-
 	});
 
+	function openNavigation() {
+		$wrapper
+			.removeClass('slideOutUp')
+			.removeClass('hidden');
+	}
+
+	function closeNavigation() {
+		$wrapper.addClass('slideOutUp');
+	}
+	
+	function showLinks() {
+		$navigationText
+			.removeClass('fadeOut')
+			.addClass('fadeIn')
+			.removeClass('hidden');
+	}
+
+	function hideLinks() {
+		$navigationText.addClass('fadeOut');
+	}
 
 });
 $(function() {
