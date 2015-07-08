@@ -1,11 +1,23 @@
 new WOW().init();
 
 $(function() {
+		
+	var $wrapper = $('.navigation-wrapper');
+	var $closeBtn = $('.navigation-close');
+	var $links = $('.links-container');
+
 	$(document).on('click', '.nav-hamburger', function() {
-		$('.navigation-wrapper').removeClass('hidden');
+		$wrapper
+			.removeClass('slideOutUp')
+			.removeClass('hidden');
 	});
+
 	$(document).on('click', '.navigation-close', function() {
-		$('.navigation-wrapper').addClass('hidden');
+		$wrapper
+			.addClass('slideOutUp');
+			
+			
+
 	});
 
 

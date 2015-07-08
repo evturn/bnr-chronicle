@@ -9,26 +9,24 @@ Mobile
 +Desktop
 	
 
-Share
-	-Popover color change on :focus / :active
-	+Popover margin/fixed position with button
-	+Share button display: block on video-items
++Popover color change on :focus / :active
++Popover margin/fixed position with button
++Share button display: block on video-items
 
 +Insert image in navbar	
 
-Issues
-	+Overflow from pagination "Next" button pushing on margin right
++Overflow from pagination "Next" button pushing on margin right
 
 navigation drop down text fade in
-
-
 
 Margins- timestamp search results
 
 Share button anchor to bottom left of the video container
 
-Share button :hover
++Share button :hover
 
-Boost color on category in main video
+-center popover
 
-video description color
++Boost color on category in main video
+
+-video description color
