@@ -1,21 +1,31 @@
 .video-nav {
   background-color: @grey;
   color: @primarydark;
-  height: 70px;
-  padding-top: 15px;
+  margin: 20px 15px;
+  .nav-hamburger,
+  .nav-search {
+    margin-top: 10px;
+    @media (min-width: @screen-sm) {
+      margin-top: 0;
+    }
+  }
+
   .nav-hamburger { 
     float: left;
     display: inline-block;
-    width: 25%;
+    width: 20%;
     cursor: pointer;
   }
   .nav-logo { 
     display: inline-block;
     text-align: center;
-    width: 50%;
-    margin-top: -5px;
+    width: 60%;
+    @media (min-width: @screen-sm) {
+      margin-top: -15px;
+    }
+
     .img-responsive {
-      width: 75px;
+      width: 90px;
       display: inline-block;
     }
   }
@@ -23,7 +33,7 @@
     cursor: pointer;
     float: right;
     text-align: right;
-    width: 25%;
+    width: 20%;
   }
   .header-text { display: none; }
   .fa {
@@ -32,6 +42,7 @@
     cursor: pointer;
   }
   @media (min-width: @screen-sm) {
+    height: 70px;
     padding: 30px 40px 40px 40px;
     .header-text { 
       display: inline-block; 

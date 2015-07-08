@@ -1,5 +1,5 @@
 .navigation-wrapper {
-	z-index: 1000;
+	z-index: 10;
 	height: 100vh;
 	opacity: 0.95;
 	position: absolute;
@@ -7,15 +7,21 @@
 	.transition(all 0.2s ease);
 	.animation-duration(0.6s);
 	.links-container {
-	  padding-top: 30px;
+	  padding-top: 70px;
 	}
 	.navigation-close {
 		float: left;
 	}
 	.navigation-header {
-	  height: 70px;
 	  width: 100%;
-		padding: 30px 40px 40px 40px;
+	  padding-left: 15px;
+  	padding-top: 10px;
+  	max-width: @screen-lg;
+	  @media (min-width: @screen-sm) {
+			padding: 30px 40px 40px 40px;
+		  margin-left: auto;
+  		margin-right: auto;
+	  }
 	  .fa {
 		  display: inline-block;
 		  font-size: 2em;

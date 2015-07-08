@@ -2,7 +2,6 @@
 
   .padding-gutter;
   padding-bottom: 40px;
-  padding-top: 15px;
   background-color: @grey;
   cursor: pointer;
 
@@ -22,7 +21,21 @@
     left: 0;
     padding: 15px;
     @media (min-width: @screen-sm) {
+
       padding:25px;
+      &:hover {
+        .transition(all 0.2s ease);
+        background-color: @black;
+        opacity: 0.7;
+        .video-play {
+          .fa,
+          .video-timestamp,
+          .video-title,
+          .btn-container {
+            opacity: 1;
+          }
+        }
+      }
     }
     
     .video-play {
@@ -134,43 +147,6 @@
       .video-title {
         bottom: 40px;
       }
-    }
-
-  }
-
-    @media (min-width: @screen-sm) {
-      
-      .video-main-wrapper {
-        
-        &:hover .video-main-inner {
-          .transition(all 0.2s ease);
-          background-color: @black;
-          opacity: 0.7;
-          .video-play {
-            .fa,
-            .video-timestamp,
-            .video-title,
-            .btn-container {
-              opacity: 1;
-            }
-          }
-        }
-      }
-    }
-
-  @media (min-width: @screen-md) {
-    .video-item .video-item-wrapper .left-container .video-timestamp {
-      height: 245px;
-    }
-  }
-
-  @media (min-width: @screen-lg) {
-    .video-item .video-item-wrapper .left-container .video-timestamp {
-      text-align: center;
-      height: 315px;
-    }
-    .video-item .video-item-wrapper .left-container .video-share {
-      text-align: center;
     }
   }
 }
