@@ -17,14 +17,14 @@ Mobile
 
 +Overflow from pagination "Next" button pushing on margin right
 
-navigation drop down text fade in
++navigation drop down text fade in
 
 Margins- timestamp search results
 
-Share button anchor to bottom left of the video container
 
 +Share button :hover
 
+Share button anchor to bottom left of the video container
 -center popover
 
 +Boost color on category in main video
