@@ -1,78 +1,148 @@
 .video-main {
-  cursor: pointer;
+
+  .padding-gutter;
+  padding-bottom: 40px;
+  padding-top: 15px;
   background-color: @grey;
+  cursor: pointer;
+
   .video-main-wrapper {
+
     .box-shadow(0px 0px 22px -4px rgba(0,0,0,0.75););
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 60px;
-    .shadow {
-      .box-shadow(inset 0px -176px 178px -62px rgba(0,0,0,0.75););
+
+  }
+    
+  .video-main-inner {
+    
+    .box-shadow(inset 0px -176px 178px -62px rgba(0,0,0,0.75););
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    @media (min-width: @screen-sm) {
+      padding:25px;
+    }
+    
+    .video-play {
+
+      display: none;
+      @media (min-width: @screen-sm) {
+        display: block;
+        text-align: center;
+        width: 100%;
+    
+        .btn-container {
+
+          margin-top: 19%;
+          border: 5px solid #fff;
+          border-radius: 50%;
+          height: 125px;
+          width: 125px;
+          background-color: #000;
+          opacity: .6;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .fa {
+
+          margin-top: 35%;
+          color: @white;
+          font-size: 2em;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .video-timestamp {
+
+      display: inline-block;
+      text-align: left;
       position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      padding: 15px;
+      top: 15px;
+      @media (min-width: @screen-sm) {
+        bottom: 15px;
+        top: initial;
+      }
+
       .header-text,
       .thin-lg {
+
         color: @white;
         -webkit-font-smoothing: antialiased;
       }
-      .video-play {
-        display: none;
-      }
-      .video-timestamp {
-        display: block;
-        width: 100%;
-        height: 65%;
-        text-align: left;
-        .header-text {
-          font-size: 22px;
-          margin-bottom: 0;
-        }
-        .thin-lg {
-          margin-top: -10px;
+
+      .header-text {
+
+        font-size: 26px;
+        margin-bottom: -12px;
+        @media (min-width: @screen-sm) {
+          font-size: 30px;
         }
       }
-      .video-title {
-        font-weight: 600;
-        color: @white;
-        display: block;
-        .video-category {
-          text-transform: uppercase;
-          color: @grey;
-          margin-bottom: 0
-        }
-        .header-text {
-          font-size: 20px;
-          line-height: 1.2em;
+      .thin-lg {
+
+        @media (min-width: @screen-sm) {
+          font-size: 40px;
           margin-bottom: 0;
-        }          
+        }
+      }
+    }
+
+    .video-title {
+
+      font-weight: 600;
+      color: @white;
+      display: block;
+      position: absolute;
+      bottom: 15px;
+      @media (min-width: @screen-sm) {
+        margin-left: 85px;
+        width: 75%;
       }
 
+      .category-text {
+
+        text-transform: uppercase;
+        color: @grey;
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+
+      .header-text {
+
+        line-height: 1.2em;
+        color: @white;
+        font-size: 21px;
+        margin-bottom: 5px;
+        @media (min-width: @screen-xs) {
+          font-size: 28px;
+        } 
+        @media (min-width: @screen-sm) {
+          font-size: 30px;
+        }
+        @media (min-width: @screen-md) {
+          font-size: 36px;
+        }   
+      }          
     }
-  }
-  @media (min-width: 520px) {
-    .video-main-wrapper {
-      .shadow {
-        .video-timestamp {
-          height: 75%;
-        }
-        .video-title {
-          width: 88%;
-          .header-text {
-            font-size: 25px;
-          }
-        }
+
+    @media (min-width: @screen-md) {
+      .video-timestamp,
+      .video-title {
+        bottom: 40px;
       }
     }
+
+  }
 
     @media (min-width: @screen-sm) {
-      padding: 15px 40px 40px 40px;
+      
       .video-main-wrapper {
-        margin-bottom: 0;
-        &:hover .shadow {
+        
+        &:hover .video-main-inner {
           .transition(all 0.2s ease);
           background-color: @black;
           opacity: 0.7;
@@ -85,83 +155,22 @@
             }
           }
         }
-        .shadow {
-          padding-left: 25px;
-          padding-right: 25px;
-          .video-play {
-            display: block;
-            height: 75%;
-            text-align: center;
-            position: relative;
-            padding-left: 43%;
-            .btn-container {
-              position: absolute;
-              margin-top: 20%;
-              border: 5px solid @white;
-              border-radius: 50%;
-              height: 110px;
-              width: 110px;
-              background-color: @black;
-              opacity: 0.6;
-            }
-            .fa {
-              margin-top: 35%;
-              color: @white;
-              font-size: 2em;
-              margin-left: 5px;
-            }
-          }
-          .video-timestamp {
-            text-align: left;
-            width: 7%;
-            height: initial;
-            display: inline-block;
-          }
-          .video-title {
-            width: 70%;
-            color: @white;
-            display: inline-block;
-            .header-text {
-              width: 100%;
-            }
-          }
-        }
       }
     }
+
+  @media (min-width: @screen-md) {
+    .video-item .video-item-wrapper .left-container .video-timestamp {
+      height: 245px;
+    }
   }
+
   @media (min-width: @screen-lg) {
-    .video-main-wrapper .shadow .video-play {
-      height: 80%;
+    .video-item .video-item-wrapper .left-container .video-timestamp {
+      text-align: center;
+      height: 315px;
     }
-    .video-main-wrapper .shadow .video-title .header-text {
-      font-size: 32px;
-    }
-    .video-main-wrapper .shadow .video-timestamp {
-      width: 8%;
+    .video-item .video-item-wrapper .left-container .video-share {
       text-align: center;
     }
-    .video-main-wrapper .shadow .video-timestamp .thin-lg {
-      font-size: 46px;
-      margin-top: -20px;
-    }
-    .video-main-wrapper .shadow .video-timestamp .header-text {
-      font-size: 30px
-    }
-  }
-}
-
-@media (min-width: @screen-md) {
-  .video-item .video-item-wrapper .left-container .video-timestamp {
-    height: 245px;
-  }
-}
-
-@media (min-width: @screen-lg) {
-  .video-item .video-item-wrapper .left-container .video-timestamp {
-    text-align: center;
-    height: 315px;
-  }
-  .video-item .video-item-wrapper .left-container .video-share {
-    text-align: center;
   }
 }

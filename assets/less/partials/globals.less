@@ -23,6 +23,44 @@
 .bg-grey 			   { background-color: @grey; }
 .bg-lightgrey 	 { background-color: @lightgrey; }
 
+
+.padding-off {
+	padding: 0;
+}
+
+.padding-off-x {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.padding-off-y {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.padding-gutter {
+	
+	.padding-off-x;
+	
+	@media (min-width: @screen-sm) {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+
+[class$="-wrapper"] {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+  width: 100%;
+  max-width: @screen-lg;
+}
+
+
+
+
+
 body { 
 	font-family: @sanscondensed; 
 	position: relative;
@@ -41,13 +79,6 @@ body {
 	  margin-left: auto;
 		max-width: @screen-lg;
 	}
-}
-
-[class$="-wrapper"] {
-	position: relative;
-  padding-right: 15px;
-  padding-left: 15px;
-  width: 100%;
 }
 
 .header-text {
