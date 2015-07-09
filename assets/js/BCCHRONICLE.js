@@ -26,14 +26,14 @@ var BCCHRONICLE = {
 
 	openNavigation: function() {
 		var $wrapper = $('.navigation-wrapper');
-		$wrapper.removeClass('trigger-delay');
+		$wrapper.removeClass('trigger-delay-short');
 		$wrapper.removeClass('slideOutUp');
 		$wrapper.removeClass('hidden');
 	},
 
 	closeNavigation: function() {
 		var $wrapper = $('.navigation-wrapper');
-		$wrapper.addClass('trigger-delay');
+		$wrapper.addClass('trigger-delay-short');
 		$wrapper.addClass('slideOutUp');
 	},
 

@@ -27,4 +27,4 @@ Mobile
 +video-share arrow position video-single
 +image in navigation
 
--make clickable [footer, next, see all, navigation links]
++make clickable [footer, next, see all, navigation links]
