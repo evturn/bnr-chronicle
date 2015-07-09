@@ -23,8 +23,8 @@ Mobile
 +video-item external link :hover independent of description
 +search-bar js into BCCHRONICLE
 +video-share visible on video-single
++video-share arrow position video-item
 
-
+-video-share arrow position video-single
 -image in navigation
--video-share arrow position
 -make clickable [footer, next, see all]
