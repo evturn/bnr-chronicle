@@ -47,6 +47,13 @@
       border-radius: 50%;
       display: inline-block;
       padding: 50px;
+      .transition(0.3s);
+      &:hover,
+      &:hover .meta .dark,
+      &:hover .meta .thin-lg.dark {
+        border-color: @primarylight;
+        color: @primarylight;
+      }
     }
     .meta {
       font-weight: 700;
@@ -86,6 +93,12 @@
     right: inherit;
     border: 5px solid @primarydark;
     border-radius: 50%;
+    .transition(0.3s);
+    &:hover,
+    &:hover .next .meta.dark {
+      border-color: @primarylight;
+      color: @primarylight;
+    } 
     @media (min-width: 480px) {
       margin-left: 30%;
     }
@@ -104,6 +117,7 @@
       border: none;
     }
     .meta {
+      .transition(0.3s);
       font-weight: 700;
       &:first-child {
         margin-bottom: -15px;
