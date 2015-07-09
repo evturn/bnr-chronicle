@@ -24,7 +24,7 @@ Mobile
 +search-bar js into BCCHRONICLE
 +video-share visible on video-single
 +video-share arrow position video-item
++video-share arrow position video-single
 
--video-share arrow position video-single
 -image in navigation
--make clickable [footer, next, see all]
+-make clickable [footer, next, see all, navigation links]
