@@ -19,10 +19,12 @@ Mobile
 +padding on grid
 +video description color :hover and clickable
 +video-share bottom left of the video container
++timestamp search results
 
 
--timestamp search results
-
+-video-item external link :hover independent of description
 -image in navigation
 -video-share arrow position
 -make clickable elements clickible
+
+-search-bar js into BCCHRONICLE

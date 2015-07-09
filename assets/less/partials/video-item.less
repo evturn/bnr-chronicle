@@ -156,16 +156,21 @@
     padding: 10px;
     width: 80%;
     text-align: left;
-    cursor: pointer;
     @media (min-width: @screen-sm) {
       width: 40%;
       height: 100%;
       padding: 25px;
-      &:hover {
-        .video-title .header-text ,
-        .video-description .meta{
+      cursor: pointer;
+      .video-details:hover {
+        .video-title .header-text,
+        .video-description .meta {
           color: @primarylight;
         }
+      }
+      .item-link:hover .meta,
+      .item-link:hover .meta .link {
+        cursor: pointer;
+        color: @primarydark;
       }
     }
     @media (min-width: @screen-md) {

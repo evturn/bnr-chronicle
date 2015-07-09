@@ -9,7 +9,6 @@ var BCCHRONICLE = {
 		$('.navigation-close').on('click', function() {
 			BCCHRONICLE.hideLinks();
 			BCCHRONICLE.closeNavigation();
-			console.log('yo');
 		});
 	},
 	openNavigation: function() {
