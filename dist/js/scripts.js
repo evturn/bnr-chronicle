@@ -39,16 +39,24 @@ var BCCHRONICLE = {
 
 	showLinks: function() {
 		var $navigationText = $('.links-container, .navigation-close');
+		var $logo = $('.navigation-header .nav-logo');
+		$logo.addClass('trigger-delay');
 		$navigationText.addClass('trigger-delay');
+		$logo.removeClass('fadeOut');
 		$navigationText.removeClass('fadeOut');
+		$logo.addClass('fadeIn');
 		$navigationText.addClass('fadeIn');
+		$logo.removeClass('hidden');
 		$navigationText.removeClass('hidden');
 	},
 
 	hideLinks: function() {
 		var $navigationText = $('.links-container, .navigation-close');
+		var $logo = $('.navigation-header .nav-logo');
 		$navigationText.removeClass('trigger-delay');
+		$logo.removeClass('trigger-delay');
 		$navigationText.addClass('fadeOut');
+		$logo.addClass('fadeOut');
 	},
 
 	openSearchBar: function() {
