@@ -16,14 +16,14 @@ Mobile
 +Share button :hover
 +navigation drop down text fade in
 
++video-play button hover opacity
++padding on grid
 
 -image in navigation
 
--padding on grid | timestamp search results
+-timestamp search results
 
--video-share bottom left of the video container
++video-share bottom left of the video container
 -video-share arrow position
 
 -video description color :hover and clickable
-
--video-play button hover opacity
