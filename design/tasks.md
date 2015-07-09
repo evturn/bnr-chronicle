@@ -18,12 +18,10 @@ Mobile
 
 +video-play button hover opacity
 +padding on grid
++video description color :hover and clickable
++video-share bottom left of the video container
+
 
 -image in navigation
-
 -timestamp search results
-
-+video-share bottom left of the video container
 -video-share arrow position
-
--video description color :hover and clickable

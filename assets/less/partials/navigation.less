@@ -1,17 +1,17 @@
 .navigation-wrapper {
+	
+	.transition(all 0.2s ease);
+	.animation-duration(0.6s);
 	z-index: 10;
 	height: 100vh;
 	opacity: 0.95;
 	position: absolute;
 	width: 100vw;
-	.transition(all 0.2s ease);
-	.animation-duration(0.6s);
+
 	.links-container {
-	  padding-top: 70px;
+	  margin-top: 70px;
 	}
-	.navigation-close {
-		float: left;
-	}
+
 	.navigation-header {
 	  width: 100%;
 	  padding-left: 15px;
@@ -22,15 +22,22 @@
 		  margin-left: auto;
   		margin-right: auto;
 	  }
-	  .fa {
-		  display: inline-block;
-		  font-size: 2em;
-		  cursor: pointer;
-	  }
 	}
+
+	.navigation-close {
+		float: left;
+		cursor: pointer;
+	}
+  .fa {
+	  display: inline-block;
+	  font-size: 2em;
+	  cursor: pointer;
+  }
+
 	.navigation-items {
 		padding-left: 0;
 	}
+
 	.navigation-item { 
 		list-style-type: none; 
 		width: 100%;
