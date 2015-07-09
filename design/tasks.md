@@ -22,9 +22,9 @@ Mobile
 +timestamp search results
 +video-item external link :hover independent of description
 +search-bar js into BCCHRONICLE
++video-share visible on video-single
 
 
 -image in navigation
 -video-share arrow position
 -make clickable [footer, next, see all]
--video-share visible on video-single

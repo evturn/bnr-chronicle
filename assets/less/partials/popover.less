@@ -3,8 +3,10 @@
   height: 220px;
   width: 165px;
   border-radius: 30px;
-  margin-left: 15px;
   font-size: 22px;
+  @media (min-width: @screen-sm) {
+    margin-left: 52px;
+  }
   .popover-content {
   	text-align: left;
 	  padding: 30px;
@@ -29,42 +31,13 @@
 		}
   }
 }
-	
-
-.popover.top>.arrow {
-	border-top-color: none;
-	border-top-color: @grey;
-	margin-left: -35px;
-	bottom: -9px;
-}
 
 @media (min-width: @screen-sm) {
 	.popover.top>.arrow {
 		border-top-color: none;
 		border-top-color: @grey;
-		margin-left: -35px;
-		bottom: -9px;
-	}
-}
-
-@media (min-width: @screen-md) {
-	.popover.top>.arrow {
-		border-top-color: none;
-		border-top-color: @grey;
-		margin-left: -35px;
-		bottom: -9px;
-	}
-}
-@media (min-width: @screen-lg) {
-	.popover.fade.top, 
-	.popover.fade.top.in {
-		margin-left: 50px;
-	}
-	.popover.top>.arrow {
-		border-top-color: none;
-		border-top-color: @grey;
-		margin-left: -60px;
-		bottom: -9px;
+		margin-left: -65px;
+		bottom: -8px;
 	}
 }
 
