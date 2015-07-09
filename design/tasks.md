@@ -15,13 +15,14 @@ Mobile
 +Overflow from pagination "Next" button pushing on margin right
 +Share button :hover
 +navigation drop down text fade in
-
 +video-play button hover opacity
 +padding on grid
 +video description color :hover and clickable
 +video-share bottom left of the video container
 
 
--image in navigation
 -timestamp search results
+
+-image in navigation
 -video-share arrow position
+-make clickable elements clickible
