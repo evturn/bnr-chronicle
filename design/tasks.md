@@ -21,11 +21,10 @@ Mobile
 +video-share bottom left of the video container
 +timestamp search results
 +video-item external link :hover independent of description
++search-bar js into BCCHRONICLE
 
 
 -image in navigation
 -video-share arrow position
--make clickable elements clickible
+-make clickable [footer, next, see all]
 -video-share visible on video-single
-
--search-bar js into BCCHRONICLE
