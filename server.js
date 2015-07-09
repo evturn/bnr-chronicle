@@ -1,7 +1,7 @@
 var express = require('express'),
-		router = require('./routes/router'),
-		hbs = require('./config/handlebars'),
-		root = __dirname + '/dist';
+    router = require('./routes/router'),
+    hbs = require('./config/handlebars'),
+    root = __dirname + '/dist';
 
 var app = express();
 

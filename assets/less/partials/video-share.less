@@ -1,40 +1,40 @@
 .video-item{
-	.video-share {
-	  
-	  display: none;
-	  @media (min-width: @screen-sm) {
-			display: block;
-			
-		}
-	}
+  .video-share {
+    
+    display: none;
+    @media (min-width: @screen-sm) {
+      display: block;
+      
+    }
+  }
 }
 
 .video-share {
-	left: -28%;
+  left: -28%;
   bottom: 2%;
-	position: absolute;
-	cursor: pointer;
+  position: absolute;
+  cursor: pointer;
   background-color: @primarylight;
   width: 45px;
   height: 45px;
   border-radius: 50%;
   text-align: center;
   padding: 12px;
-	cursor: pointer;
-	@media (min-width: @screen-md) {
-		left: -14%;
-	}
+  cursor: pointer;
+  @media (min-width: @screen-md) {
+    left: -14%;
+  }
   .fa {
     color: @white;
   }
 
   &:hover {
-		background-color: @grey;
+    background-color: @grey;
 
-		.fa{
-			color: @primarydark;
-		}
-	}
+    .fa{
+      color: @primarydark;
+    }
+  }
 }
 
 .video-main-info {
