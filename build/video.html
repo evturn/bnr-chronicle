@@ -1,67 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Single Video</title>
-  <link rel="stylesheet" href="dist/css/vendor.css">
-  <link rel="stylesheet" href="dist/css/less.css">
+  <title>Chronicle</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/less.css">
 </head>
 <body>
-
-  <div class="container-fluid bg-grey navigation-wrapper hidden">
-    <div class="row">
-      <div class="navigation-header">
-        <div class="navigation-close">
-          <i class="fa fa-times"></i>
-        </div>
+  <div class="container-fluid bg-grey navigation-wrapper hidden animated slideInDown">
+    <div class="navigation-header">
+      <div class="navigation-close hidden animated">
+        <i class="fa fa-times"></i>
       </div>
-      <div class="links-container">
-        <ul class="navigation-items">
-          <li class="navigation-item"><p class="header-text">Featured</p></li>
-          <li class="navigation-item"><p class="header-text">Events</p></li>
-          <li class="navigation-item"><p class="header-text">Industries</p></li>
-          <li class="navigation-item"><p class="header-text">Products</p></li>
-          <li class="navigation-item"><p class="header-text">Services</p></li>
-        </ul>
+      <div class="nav-logo hidden animated">
+        <img class="img-responsive" src="https://s3.amazonaws.com/www-tropo-com/wp-content/uploads/2015/05/Cisco_logo.svg_.png">
       </div>
     </div>
-  </div>
-
-
-  <div class="container-fluid bg-black white search-bar collapsible hidden">
-    <div class="row">
-      <div class="col-12 col-xs-12">
-        <div class="search-input-container">
-          <input type="text" class="search-input" placeholder="Search videos...">
-        </div>
-        <div class="search-btn-container">
-          <a class="search-focus" href="#"><i class="fa fa-search"></i></a>
-        </div>
-      </div>
+    <div class="links-container hidden animated">
+      <ul class="navigation-items">
+        <li class="navigation-item"><p class="header-text"><a href="#">Featured</a></p></li>
+        <li class="navigation-item"><p class="header-text"><a href="#">Events</a></p></li>
+        <li class="navigation-item"><p class="header-text"><a href="#">Industries</a></p></li>
+        <li class="navigation-item"><p class="header-text"><a href="#">Products</a></p></li>
+        <li class="navigation-item"><p class="header-text"><a href="#">Services</a></p></li>
+      </ul>
     </div>
-  </div>
-
-
-  <div class="container-fluid video-nav">
-    <div class="row">
-      <div class="nav-container">
-        <div class="nav-hamburger">
-          <span><i class="fa fa-bars"></i><p class="header-text"> Collections</p></span>
-        </div>
-        <div class="nav-search">
-          <span class="search-field-open search-launch"><i class="fa fa-search"></i><p class="header-text"> Search</p></span>
-          <span class="search-field-collapse collapsible hidden"><i class="fa fa-times"></i><p class="header-text"></p></span>
+  </div>  <div class="container-fluid bg-black white search-bar collapsible hidden">
+    <div class="wrapper">
+      <div class="row">
+        <div class="search-bar-wrapper">
+          <div class="search-input-container">
+            <input type="text" class="search-input" placeholder="Search videos...">
+          </div>
+          <div class="search-btn-container">
+            <a class="search-focus" href="#"><i class="fa fa-search"></i></a>
+          </div>
         </div>
       </div>
     </div>
+  </div>  <div class="container-fluid video-nav">
+    <div class="nav-wrapper">
+      <div class="nav-hamburger">
+        <span><i class="fa fa-bars"></i><p class="header-text"> Collections</p></span>
+      </div>
+      <div class="nav-logo">
+        <img class="img-responsive" src="https://s3.amazonaws.com/www-tropo-com/wp-content/uploads/2015/05/Cisco_logo.svg_.png">
+      </div>
+      <div class="nav-search">
+        <span class="search-field-open search-launch"><i class="fa fa-search"></i><p class="header-text"> Search</p></span>
+        <span class="search-field-collapse collapsible hidden"><i class="fa fa-times"></i><p class="header-text"></p></span>
+      </div>
+    </div>
   </div>
-
-
   <div class="container-fluid video-single video-main">
-    <div class="col-lg-12 col-xs-12 video-container">
-      <img class="img-responsive" src="assets/img/thumb.png">
-      <div class="shadow">
+  <div class="video-main-wrapper">
+    <img class="img-responsive" src="img/thumb.png">
+    <div class="video-main-inner">
+      <div class="video-play">
+        <a href="#">
+          <div class="btn-container">
+            <i class="fa fa-play"></i>
+          </div>
+        </a>
+      </div>
+      <div class="video-timestamp">
+        <p class="header-text">Mar</p>
+        <p class="thin-lg">28</p>
+      </div>
+      <div class="video-title">
+        <p class="category-text">Products</p>
+        <p class="header-text">IoT World Forum Closing Keynote Session With John Chambers</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid video-main-info">
+  <div class="video-info-wrapper">
+      <div class="header">
+        <p class="meta darkgrey">Products</p>
+        <p class="header-text">Office Takeover</p>
+      </div>
+      <div class="video-description">
+        <p class="thin-sm">Lorem ipsum dolor sit amet, ne tota dolorem eos, vero erat impetus est id. Menandri theophrastus mei ad, et alia pertinax nec.</p>
+      </div>
+      <div class="video-links">
+        <div class="video-share" data-container=".video-links" data-toggle="popover" data-trigger="click" data-html="true" data-placement="top" data-content="
+          <ul>
+            <li><p class='thin-sm'><a href='#'><i class='fa fa-facebook-square'></i> Share</a></p></li>
+            <li><p class='thin-sm'><a href='#'><i class='fa fa-twitter'></i> Tweet</a></p></li>
+            <li><p class='thin-sm'><a href='#'><i class='fa fa-paper-plane'></i> Email</a></p></li>
+            <li><p class='thin-sm'><a href='#'><i class='fa fa-link'></i> Get link</a></p></li>
+          </ul>" data-original-title="" title=""><i class="fa fa-share-alt"></i>
+        </div>
+         <div class="item-link">
+          <p class="meta">Nostrud <a class="link" href="#">laetantes <i class="fa fa-angle-right"></i></a></p>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="container-fluid more-products">
+  <div class="container">
+    <div class="row">
+      <p class="thin-sm">More from <span class="header-text">Products</span></p>
+    </div>
+  </div>
+</div><div class="container-fluid video-item">
+  <div class="video-item-wrapper">
+    <div class="left-container">
+      <div class="video-timestamp">
+        <p class="header-text">Mar</p>
+        <p class="thin-lg">28</p>
+      </div>
+    </div>
+    <div class="video-container">
+      <img class="img-responsive" src="img/thumb.png">
+      <div class="video-item-inner">
         <div class="video-play">
           <a href="#">
             <div class="btn-container">
@@ -69,181 +121,187 @@
             </div>
           </a>
         </div>
-        <div class="video-timestamp">
-          <p class="header-text">Mar</p>
-          <p class="thin-lg">28</p>
-        </div>
+      </div>
+      <div class="video-share" data-container=".video-container" data-toggle="popover" data-trigger="click" data-html="true" data-placement="top" data-content="
+          <ul>
+            <li><p class='thin-sm'><a href='#'><i class='fa fa-facebook-square'></i> Share</a></p></li>
+            <li><p class='thin-sm'><a href='#'><i class='fa fa-twitter'></i> Tweet</a></p></li>
+            <li><p class='thin-sm'><a href='#'><i class='fa fa-paper-plane'></i> Email</a></p></li>
+            <li><p class='thin-sm'><a href='#'><i class='fa fa-link'></i> Get link</a></p></li>
+          </ul>" data-original-title="" title=""><i class="fa fa-share-alt"></i>
+      </div>
+    </div>        
+    <div class="right-container">
+      <div class="video-details">
         <div class="video-title">
-          <p class="video-category">Products</p>
-          <p class="header-text">IoT World Forum Closing Keynote Session With John Chambers</p>
+          <p class="header-text">Retail Center Creates lorem ipsum "Everyday Wonder"</p>
         </div>
+        <div class="video-duration">
+          <span class="badge">5:04</span>
+        </div>
+        <div class="video-description">
+          <p class="meta">Lorem ipsum dolor sit amet, ne tota dolorem eos, vero erat impetus est id. Menandri theophrastus mei ad, et alia pertinax nec, id has iudico verterem explicari.</p>
+        </div>
+      </div>
+      <div class="item-link">
+        <p class="meta">We're wired and ready. <a class="link" href="#">See how <i class="fa fa-angle-right"></i></a></p>
       </div>
     </div>
   </div>
-  <div class=" container-fluid video-main-info">
-  	<div class="header">
-  		<p class="meta darkgrey">Products</p>
-  		<p class="header-text">Office Takeover</p>
-  	</div>
-  	<div class="video-description">
-  		<p class="thin-sm">Lorem ipsum dolor sit amet, ne tota dolorem eos, vero erat impetus est id. Menandri theophrastus mei ad, et alia pertinax nec.</p>
-  	</div>
-  </div>
-  <div class=" container-fluid video-main-links">
-  	<div 
-  	class="video-share" 
-  	data-container=".video-main-links" 
-  	data-toggle="popover" 
-  	data-html="true" 
-  	data-placement="top" 
-  	data-content="
-  	<ul>
-  		<a href='#'><li><p class='thin-sm'><i class='fa fa-facebook-square'></i> Share</p></li></a>
-  		<a href='#'><li><p class='thin-sm'><i class='fa fa-twitter'></i> Tweet</p></li></a>
-  		<a href='#'><li><p class='thin-sm'><i class='fa fa-paper-plane'></i> Email</p></li></a>
-  		<a href='#'><li><p class='thin-sm'><i class='fa fa-link'></i> Get link</p></li></a>
-  	</ul>">
-  		<i class="fa fa-share-alt"></i>
-  	</div>
-  	 <div class="item-link">
-      <p class="meta">Nostrud <a class="link" href="#">laetantes <i class="fa fa-angle-right"></i></a></p>
+</div><div class="container-fluid video-item">
+  <div class="video-item-wrapper">
+    <div class="left-container">
+      <div class="video-timestamp">
+        <p class="header-text">Mar</p>
+        <p class="thin-lg">28</p>
+      </div>
     </div>
-  </div>
-
-  <div class=" container-fluid more-products">
-  	<p class="thin-sm">More from <span class="header-text">Products</span></p>
-  </div>
-
-
-  <div class="container-fluid video-item">    
-    <div class="row">
-      <div class="col-lg-12 col-xs-12 video-item-wrapper">
-        <div class="left-container">
-          <div class="video-timestamp">
-            <p class="header-text">Mar</p>
-            <p class="thin-lg">28</p>
-          </div>
-          <div class="video-share">
-            <i class="fa fa-share-alt"></i>
-          </div>
+    <div class="video-container">
+      <img class="img-responsive" src="img/thumb.png">
+      <div class="video-item-inner">
+        <div class="video-play">
+          <a href="#">
+            <div class="btn-container">
+              <i class="fa fa-play"></i>
+            </div>
+          </a>
         </div>
-        <div class="video-container">
-          <img class="img-responsive" src="assets/img/thumb.png">
-        </div>        
-        <div class="right-container">
-          <div class="video-title">
-            <p class="header-text">Retail Center Creates lorem ipsum "Everyday Wonder"</p>
-          </div>
-          <div class="video-duration">
-            <span class="badge">5:04</span>
-          </div>
-          <div class="video-description">
-            <p class="meta">Lorem ipsum dolor sit amet, ne tota dolorem eos, vero erat impetus est id. Menandri theophrastus mei ad, et alia pertinax nec, id has iudico verterem explicari.</p>
-          </div>
-          <div class="item-link">
-            <p class="meta">We're wired and ready. <a class="link" href="#">See how <i class="fa fa-angle-right"></i></a></p>
-          </div>
+      </div>
+      <div class="video-share" data-container=".video-container" data-toggle="popover" data-trigger="click" data-html="true" data-placement="top" data-content="
+          <ul>
+            <li><p class='thin-sm'><a href='#'><i class='fa fa-facebook-square'></i> Share</a></p></li>
+            <li><p class='thin-sm'><a href='#'><i class='fa fa-twitter'></i> Tweet</a></p></li>
+            <li><p class='thin-sm'><a href='#'><i class='fa fa-paper-plane'></i> Email</a></p></li>
+            <li><p class='thin-sm'><a href='#'><i class='fa fa-link'></i> Get link</a></p></li>
+          </ul>" data-original-title="" title=""><i class="fa fa-share-alt"></i>
+      </div>
+    </div>        
+    <div class="right-container">
+      <div class="video-details">
+        <div class="video-title">
+          <p class="header-text">Retail Center Creates lorem ipsum "Everyday Wonder"</p>
         </div>
+        <div class="video-duration">
+          <span class="badge">5:04</span>
+        </div>
+        <div class="video-description">
+          <p class="meta">Lorem ipsum dolor sit amet, ne tota dolorem eos, vero erat impetus est id. Menandri theophrastus mei ad, et alia pertinax nec, id has iudico verterem explicari.</p>
+        </div>
+      </div>
+      <div class="item-link">
+        <p class="meta">We're wired and ready. <a class="link" href="#">See how <i class="fa fa-angle-right"></i></a></p>
       </div>
     </div>
   </div>
+</div><div class="container-fluid video-item">
+  <div class="video-item-wrapper">
+    <div class="left-container">
+      <div class="video-timestamp">
+        <p class="header-text">Mar</p>
+        <p class="thin-lg">28</p>
+      </div>
+    </div>
+    <div class="video-container">
+      <img class="img-responsive" src="img/thumb.png">
+      <div class="video-item-inner">
+        <div class="video-play">
+          <a href="#">
+            <div class="btn-container">
+              <i class="fa fa-play"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="video-share" data-container=".video-container" data-toggle="popover" data-trigger="click" data-html="true" data-placement="top" data-content="
+          <ul>
+            <li><p class='thin-sm'><a href='#'><i class='fa fa-facebook-square'></i> Share</a></p></li>
+            <li><p class='thin-sm'><a href='#'><i class='fa fa-twitter'></i> Tweet</a></p></li>
+            <li><p class='thin-sm'><a href='#'><i class='fa fa-paper-plane'></i> Email</a></p></li>
+            <li><p class='thin-sm'><a href='#'><i class='fa fa-link'></i> Get link</a></p></li>
+          </ul>" data-original-title="" title=""><i class="fa fa-share-alt"></i>
+      </div>
+    </div>        
+    <div class="right-container">
+      <div class="video-details">
+        <div class="video-title">
+          <p class="header-text">Retail Center Creates lorem ipsum "Everyday Wonder"</p>
+        </div>
+        <div class="video-duration">
+          <span class="badge">5:04</span>
+        </div>
+        <div class="video-description">
+          <p class="meta">Lorem ipsum dolor sit amet, ne tota dolorem eos, vero erat impetus est id. Menandri theophrastus mei ad, et alia pertinax nec, id has iudico verterem explicari.</p>
+        </div>
+      </div>
+      <div class="item-link">
+        <p class="meta">We're wired and ready. <a class="link" href="#">See how <i class="fa fa-angle-right"></i></a></p>
+      </div>
+    </div>
+  </div>
+</div>
 
-
-  <div class="container-fluid video-single footer-pagination">
+<div class="container-fluid video-single footer-pagination">
+  <div class="wrapper">
     <div class="row">
-      <div class="col-lg-12 col-xs-12 pagination-wrapper">
+      <div class="pagination-wrapper">
         <div class="pagination-ctrls">
-          <div class="next">
-            <p class="meta dark">See all</p>
-            <p class="meta dark">10 Videos</p>
-          </div>
+          <a href="#">
+            <div class="next">
+              <p class="meta dark">See all</p>
+              <p class="meta dark">10 Videos</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
   </div>
-  <div class="container-fluid footer-page">
+</div><div class="container-fluid footer-page">
+  <div class="wrapper">
     <div class="row">
-      <div class="col-lg-12 col-xs-12 footer-wrapper">
+      <div class="footer-wrapper">
         <div class="footer-section img-container">
           <img class="img-responsive footer-img" src="https://s3.amazonaws.com/www-tropo-com/wp-content/uploads/2015/05/Cisco_logo.svg_.png">
         </div>
         <div class="footer-section social">
           <ul class="link-items">
-            <li class="link-item-title">
-              <p class="meta dark">Follow us for updates</p>
-            </li>
-            <li class="link-item">
-              <p class="meta dark"><i class="fa fa-facebook"></i> Facebook</p>
-            </li>
-            <li class="link-item">
-              <p class="meta dark"><i class="fa fa-twitter"></i> Twitter</p>
-            </li>
-            <li class="link-item">
-              <p class="meta dark"><i class="fa fa-instagram"></i> Instagram</p>
-            </li>
+            <li class="link-item-title"><p class="meta dark">Follow us for updates</p></li>
+            <li class="link-item"><p class="meta dark"><a href="#"><i class="fa fa-facebook"></i> Facebook</a></p></li>
+            <li class="link-item"><p class="meta dark"><a href="#"><i class="fa fa-twitter"></i> Twitter</a></p></li>
+            <li class="link-item"><p class="meta dark"><a href="#"><i class="fa fa-instagram"></i> Instagram</a></p></li>
           </ul>
         </div>
        <div class="footer-section about">
         <ul class="link-items">
-          <li class="link-item-title">
-            <p class="meta dark">About</p>
-          </li>
-          <li class="link-item">
-            <p class="meta dark">Lorem</p>
-          </li>
-          <li class="link-item">
-            <p class="meta dark">Ipsum</p>
-          </li>
-          <li class="link-item">
-            <p class="meta dark">Dolor</p>
-          </li>
-          <li class="link-item">
-            <p class="meta dark">Sit amet</p>
-          </li>
+          <li class="link-item-title"><p class="meta dark">About</p></li>
+          <li class="link-item"><p class="meta dark"><a href="#">Lorem</a></p></li>
+          <li class="link-item"><p class="meta dark"><a href="#">Ipsum</a></p></li>
+          <li class="link-item"><p class="meta dark"><a href="#">Dolor</a></p></li>
+          <li class="link-item"><p class="meta dark"><a href="#">Sit amet</a></p></li>
         </ul>
       </div>
        <div class="footer-section list-hide">
         <ul class="link-items">
-          <li class="link-item-title">
-            <p class="meta dark">Company</p>
-          </li>
-          <li class="link-item">
-            <p class="meta dark">Consectetur</p>
-          </li>
-          <li class="link-item">
-            <p class="meta dark">Adipscing elit</p>
-          </li>
-          <li class="link-item">
-            <p class="meta dark">Consectetur</p>
-          </li>
-          <li class="link-item">
-            <p class="meta dark">Adipscing elit</p>
-          </li>
+          <li class="link-item-title"><p class="meta dark">Company</p></li>
+          <li class="link-item"><p class="meta dark"><a href="#">Consectetur</a></p></li>
+          <li class="link-item"><p class="meta dark"><a href="#">Adipscing elit</a></p></li>
+          <li class="link-item"><p class="meta dark"><a href="#">Consectetur</a></p></li>
+          <li class="link-item"><p class="meta dark"><a href="#">Adipscing elit</a></p></li>
         </ul>
       </div>
        <div class="footer-section list-hide">
         <ul class="link-items">
-          <li class="link-item-title">
-            <p class="meta dark">Lorem Ipsum</p>
-          </li>
-          <li class="link-item">
-            <p class="meta dark">Lorem ipsum</p>
-          </li>
-          <li class="link-item">
-            <p class="meta dark">Ipsum dolor</p>
-          </li>
-          <li class="link-item">
-            <p class="meta dark">Dolor adipscing</p>
-          </li>
-          <li class="link-item">
-            <p class="meta dark">Sit amet</p>
-          </li>
+          <li class="link-item-title"><p class="meta dark">Lorem Ipsum</p></li>
+          <li class="link-item"><p class="meta dark"><a href="#">Lorem ipsum</a></p></li>
+          <li class="link-item"><p class="meta dark"><a href="#">Ipsum dolor</a></p></li>
+          <li class="link-item"><p class="meta dark"><a href="#">Dolor adipscing</a></p></li>
+          <li class="link-item"><p class="meta dark"><a href="#">Sit amet</a></p></li>
         </ul>
       </div>
     </div>
   </div>
+</div>
 
-  <script src="dist/js/vendor.js"></script>
-  <script src="dist/js/scripts.js"></script>
-</body>
-</html>
+  <script src="js/vendor.js"></script>
+  <script src="js/scripts.js"></script>
+
+</div></body></html>
