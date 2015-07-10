@@ -45,6 +45,9 @@
   .navigation-close {
     float: left;
     cursor: pointer;
+    &:hover {
+      color: @primarylight;
+   }
   }
   .fa {
     display: inline-block;
@@ -61,6 +64,13 @@
     width: 100%;
     text-transform: uppercase;
     text-align: center;
+    a {
+       background: transparent;
+       text-decoration: none;
+       &:hover {
+        color: @primarylight;
+       }
+    }
   }
   .header-text {
     @media (min-width: @screen-sm) {
