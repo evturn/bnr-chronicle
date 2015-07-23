@@ -156,11 +156,13 @@
     padding: 10px;
     width: 80%;
     text-align: left;
+
     @media (min-width: @screen-sm) {
       width: 40%;
       height: 100%;
       padding: 25px;
       cursor: pointer;
+
       .video-details:hover {
         .video-title .header-text,
         .video-description .meta {
@@ -179,6 +181,10 @@
     .video-title {
       .header-text {
         font-size: 19px;
+
+        @media (min-width: @screen-lg) {
+          font-size: 26px;
+        }
       }
     }
     .video-duration {
@@ -190,15 +196,19 @@
         padding: 5px 8px;
       }
     
-      @media (min-width: @screen-sm) {
-        .badge {
-          font-size: 11px;
-        }
-      }
     }
     .video-description {
       color: @black;
       display: none;
+
+      .meta {
+        font-family: @sans;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.3em;
+      }
+
+
       @media (min-width: @screen-sm) {
         display: block;
         margin-top: 15px;
@@ -214,14 +224,17 @@
           bottom: 35px;
           position: absolute;
         .meta { 
-          font-size: 14px; 
-          color: @darkgrey;
+          font-size: 16px;
+          color: @black;
+          font-family: @sans;
+          font-weight: 300;
           .link {
+            font-size: 24px;
+            font-family: @sanscondensed;
             color: @primarylight; 
             text-align: right;
-            font-size: 18px;
             text-decoration: none;
-            font-weight: 400;
+            font-weight: 500;
           }
         }
       }
